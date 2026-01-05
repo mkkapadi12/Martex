@@ -25,7 +25,7 @@ export default function Navbar() {
     >
       <nav
         className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-7xl lg:px-8 ${
-          scrolled ? "py-4" : "py-7"
+          scrolled ? "py-6" : "py-7"
         }`}
       >
         {/* Logo */}
@@ -47,21 +47,23 @@ export default function Navbar() {
         {/* Desktop Buttons */}
         <div className="items-center hidden gap-4 lg:flex">
           <Link
-            to="#"
+            to="/login"
             className={`font-semibold ${
               scrolled ? "text-gray-700" : "text-white"
             }`}
           >
             Sign in
           </Link>
-          <button className="px-4 py-2 text-white bg-pink-500 rounded-md">
-            Sign up
-          </button>
+          <Link to="/signup">
+            <button className="px-4 py-2 text-white bg-pink-500 rounded-md">
+              Sign up
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="text-2xl text-white lg:hidden"
+          className="text-2xl text-[#6c757d] lg:hidden"
           onClick={() => setOpen(true)}
         >
           ☰
