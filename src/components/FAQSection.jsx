@@ -1,0 +1,113 @@
+export default function FAQSection() {
+  return (
+    <section className="px-4 py-20 bg-white">
+      <div className="mx-auto max-w-7xl">
+        {/* Heading */}
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#353f4f] md:text-4xl lg:text-6xl">
+            Questions & Answers
+          </h2>
+          <p className="mt-4 text-[#757575] text-lg md:text-2xl">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
+        </div>
+
+        {/* FAQ Grid */}
+        <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-x-16 gap-y-12">
+          {/* Left Column */}
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                1. Getting started with Martex
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                Etiam amet mauris suscipit in odio integer congue metus and
+                vitae arcu mollis blandit ultrice ligula egestas magna suscipit
+                lectus magna suscipit luctus blandit and laoreet
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                2. What’s inside the package?
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                An enim nullam tempor sapien gravida donec ipsum and enim porta
+                justo integer at velna vitae auctor integer congue undo magna
+                laoreet augue pretium purus pretium ligula
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                3. How do I choose a plan?
+              </h3>
+              <ul className="mt-3 space-y-2 text-[#757575] text-lg list-disc list-inside">
+                <li>
+                  Fringilla risus, luctus mauris orci auctor purus ligula
+                  euismod pretium purus pretium rutrum tempor sapien
+                </li>
+                <li>
+                  Nemo ipsam egestas volute undo turpis purus lipsum primis
+                  aliquam sapien quaerat sodales pretium a purus
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                4. How does Martex handle my privacy?
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                Quaerat sodales sapien euismod blandit purus a purus ipsum
+                primis in cubilia laoreet augue luctus dolor luctus
+              </p>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                An enim nullam tempor sapien gravida donec congue metus. Vitae
+                arcu mollis blandit integer nemo volute velna
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                5. I have an issue with my account
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                Cubilia laoreet augue egestas and luctus donec curabite diam
+                vitae dapibus libero and quisque gravida donec neque blandit
+                justo aliquam molestie nunc sapien justo
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+                6. Can I cancel at anytime?
+              </h3>
+              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+                An enim nullam tempor sapien gravida donec ipsum and enim porta
+                justo integer at velna vitae auctor integer congue undo magna
+                laoreet augue pretium purus pretium ligula
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Get in Touch Btn */}
+        <div className="flex items-center w-full gap-2 my-10">
+          <div className="flex rounded-full gap-1 mx-auto text-center bg-[#f4f4f9] px-10 py-4">
+            <span className="text-base md:text-2xl text-[#6c757d]">
+              Have any questions?
+            </span>
+            <div>
+              <button className="text-base md:text-2xl text-[#f74780] underline font-bold hover:text-[#6c757d] transition-all duration-300">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
