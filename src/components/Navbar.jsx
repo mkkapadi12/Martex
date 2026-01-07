@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { X, ChevronDown } from "lucide-react";
-import logo from "../assets/images/logo-white.png";
-import logopink from "../assets/images/logo-pink.png";
+import { homeNav, pricingNav } from "../Data/navigation";
 
-export default function Navbar() {
+export default function Navbar({ data }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { text, logo, logoscroll, bg, link_color, btn_color, btn_text } = data;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#ffffffb3] shadow-md opacity-100" : "bg-[#8a4be0]"
+        scrolled ? "bg-[#ffffffb3] shadow-md opacity-100" : `bg-${bg}`
       }`}
     >
       <nav
@@ -29,19 +29,21 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <img src={scrolled ? logopink : logo} alt="logo" className="h-8" />
+        <Link to="/">
+          <img src={scrolled ? logoscroll : logo} alt="logo" className="h-8" />
+        </Link>
 
         {/* Desktop Menu */}
         <div
           className={`hidden pr-4 font-semibold lg:flex gap-x-12 transition-all duration-300 ${
-            scrolled ? "text-gray-700" : "text-white"
+            scrolled ? "text-gray-700" : `${link_color}`
           }`}
         >
-          <Link to="#">About</Link>
-          <Link to="#">Features</Link>
-          <Link to="#">Pages</Link>
-          <Link to="#">Pricing</Link>
-          <Link to="#">FAQ</Link>
+          {pricingNav.map((item, index) => (
+            <Link key={index} to={item.link}>
+              {item.name}
+            </Link>
+          ))}
         </div>
 
         {/* Desktop Buttons */}
@@ -49,14 +51,14 @@ export default function Navbar() {
           <Link
             to="/login"
             className={`font-semibold ${
-              scrolled ? "text-gray-700" : "text-white"
+              scrolled ? "text-gray-700" : `${text}`
             }`}
           >
             Sign in
           </Link>
           <Link to="/signup">
-            <button className="px-4 py-2 text-white bg-pink-500 rounded-md">
-              Sign up
+            <button className={`px-4 py-2 text-white ${btn_color} rounded-md`}>
+              {btn_text}
             </button>
           </Link>
         </div>

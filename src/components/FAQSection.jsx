@@ -1,4 +1,4 @@
-export default function FAQSection() {
+export default function FAQSection({ get_color }) {
   return (
     <section className="px-4 py-20 bg-white">
       <div className="mx-auto max-w-7xl">
@@ -101,7 +101,9 @@ export default function FAQSection() {
               Have any questions?
             </span>
             <div>
-              <button className="text-base md:text-2xl text-[#f74780] underline font-bold hover:text-[#6c757d] transition-all duration-300">
+              <button
+                className={`text-base md:text-2xl ${get_color} underline font-bold hover:text-[#353f4f] transition-all duration-300`}
+              >
                 Get in Touch
               </button>
             </div>

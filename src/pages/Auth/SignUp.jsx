@@ -83,13 +83,16 @@ export default function SignUp() {
             <div className="text-left">
               <span className="text-sm text-gray-600 sm:text-base">
                 By clicking “Create Account”, you agree to our{" "}
-                <a href="#" className="font-semibold text-[#6c757d] underline">
+                <Link
+                  to="/terms"
+                  className="font-semibold text-[#6c757d] underline"
+                >
                   Terms
-                </a>{" "}
+                </Link>{" "}
                 and that you have read our{" "}
-                <a href="#" className="font-semibold text-[#6c757d] underline">
+                <Link to="/privacy" className="font-semibold text-[#6c757d] underline">
                   Privacy Policy
-                </a>
+                </Link>
               </span>
             </div>
 

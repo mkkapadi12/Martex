@@ -1,7 +1,7 @@
 import React from "react";
-import bg from "../assets/images/bg-03.jpg";
 
-export default function CTASection() {
+export default function CTASection({ cta_data }) {
+  const { btn_color, btn_text, title, bg } = cta_data;
   return (
     <section className="px-4 pb-20 bg-white">
       <div className="mx-auto max-w-7xl">
@@ -13,8 +13,7 @@ export default function CTASection() {
         >
           {/* Content */}
           <h2 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
-            Starting with Martex is easy,
-            <br className="hidden sm:block" /> fast and free
+            {title}
           </h2>
 
           <p className="mt-4 text-lg text-white">
@@ -23,7 +22,7 @@ export default function CTASection() {
 
           {/* Button */}
           <div className="mt-8">
-            <button className="px-10 py-3 text-lg font-semibold text-white transition-all duration-300 bg-pink-500 rounded-lg hover:border hover:bg-transparent hover:border-white">
+            <button className={`px-10 py-3 text-lg font-semibold text-white transition-all duration-300 ${btn_color} rounded-lg hover:border hover:bg-transparent hover:border-white`}>
               Get started – it&apos;s free
             </button>
           </div>

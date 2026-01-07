@@ -1,0 +1,63 @@
+import React from "react";
+import Navbar from "../components/Navbar";
+import logoblue from "../assets/images/logo-blue.png";
+import Company from "../components/Company";
+import PricingSection from "./Pricing/components/PricingSection";
+import { Switch } from "../components/ui/switch";
+import FAQSection from "../components/FAQSection";
+import CTASection from "../components/CTASection";
+import bg from "../assets/images/bg-05.jpg";
+import Footer from "../components/Footer";
+import PricingComparisonTable from "./Pricing/components/PricingComparisonTable";
+
+const Pricing = () => {
+  const data = {
+    logo: logoblue,
+    logoscroll: logoblue,
+    bg: "bg-white",
+    link_color: "text-[#353f4f]",
+    btn_color: "bg-[#1680fb]",
+    btn_text: "Get Started",
+    text: "text-[#353f4f]",
+  };
+
+  const cta_data = {
+    btn_color: "bg-[#1680fb]",
+    btn_text: "Get started – it's free",
+    title: "Give it a try, it's free!",
+    bg: bg,
+  };
+
+  return (
+    <main className="min-h-screen bg-white">
+      <Navbar data={data} />
+      <section className="px-4 pt-20 mx-auto max-w-[1350px]">
+        <div className="container mx-auto">
+          <div className="pt-20 text-center">
+            <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-[#353f4f] font-bold">
+              Simple, Flexible Pricing
+            </h1>
+            <p className="text-[#6c757d] text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
+              Billed monthly
+              <span>
+                <Switch className="w-12 mx-3 h-7" />
+              </span>
+              Billed yearly
+            </p>
+            <span className="text-[#1680fb] text-lg mt-4 inline-block">
+              Save up to 35% with yearly billing
+            </span>
+          </div>
+          <PricingSection />
+        </div>
+      </section>
+      <Company title={"Trusted and used by over 3,400 companies"} />
+      <PricingComparisonTable />
+      <FAQSection get_color={"text-[#1680fb]"} />
+      <CTASection cta_data={cta_data} />
+      <Footer />
+    </main>
+  );
+};
+
+export default Pricing;

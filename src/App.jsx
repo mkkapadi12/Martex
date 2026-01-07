@@ -4,6 +4,9 @@ import Home from "./pages/Home";
 import Login from "./pages/Auth/Login";
 import SignUp from "./pages/Auth/SignUp";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/Privacy";
+import TermsOfService from "./pages/TermsOfService";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
         {/* Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<div>About Page</div>} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/pricing" element={<Pricing />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />
