@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import logoblue from "../assets/images/logo-blue.png";
-import Company from "../components/Company";
-import PricingSection from "./Pricing/components/PricingSection";
-import { Switch } from "../components/ui/switch";
-import FAQSection from "../components/FAQSection";
-import CTASection from "../components/CTASection";
-import bg from "../assets/images/bg-05.jpg";
-import Footer from "../components/Footer";
-import PricingComparisonTable from "./Pricing/components/PricingComparisonTable";
+import Navbar from "../../components/Navbar";
+import logoblue from "../../assets/images/logo-blue.png";
+import Company from "../../components/Company";
+import PricingSection from "../Pricing/components/PricingSection";
+import { Switch } from "../../components/ui/switch";
+import FAQSection from "../../components/FAQSection";
+import CTASection from "../../components/CTASection";
+import bg from "../../assets/images/bg-05.jpg";
+import Footer from "../../components/Footer";
+import PricingComparisonTable from ".././Pricing/components/PricingComparisonTable";
 
 const Pricing = () => {
   const data = {

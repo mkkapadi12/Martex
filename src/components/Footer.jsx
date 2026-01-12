@@ -5,11 +5,10 @@ import {
   Youtube,
   ArrowRight,
 } from "lucide-react";
-import logopink from "../assets/images/logo-pink.png";
 
-export default function Footer() {
+export default function Footer({logo}) {
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white border-0 border-gray-200">
       <div className="px-4 py-16 mx-auto max-w-7xl">
         {/* Top Section */}
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
@@ -17,7 +16,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2">
               <img
-                src={logopink}
+                src={logo}
                 alt="Martex Logo"
                 className="w-auto h-10 rounded"
               />

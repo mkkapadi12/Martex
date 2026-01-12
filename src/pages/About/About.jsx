@@ -1,0 +1,466 @@
+import React from "react";
+import Navbar from "../../components/Navbar";
+import logoblue from "../../assets/images/logo-blue.png";
+import a21 from "../../assets/images/about/a2-1.jpg";
+import a22 from "../../assets/images/about/a2-2.jpg";
+import a23 from "../../assets/images/about/a2-3.jpg";
+import a24 from "../../assets/images/about/a2-4.jpg";
+import Services from "./components/Services";
+import Company from "../../components/Company";
+import TeamSection from "./components/TeamSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import Footer from "../../components/Footer";
+import logo from "../../assets/images/logo-blue.png";
+import { Play } from "lucide-react";
+
+const statsData = [
+  {
+    id: 1,
+    value: "26.62k",
+    title: "Happy Customers",
+    desc: "Porta justo integer and velna vitae auctor and magna quaerat ligula",
+  },
+  {
+    id: 2,
+    value: "13.54k",
+    title: "Positive Ratings",
+    desc: "Porta justo integer and velna vitae auctor and magna quaerat ligula",
+  },
+  {
+    id: 3,
+    value: "4.87/5",
+    title: "Rating",
+    desc: "Porta justo integer and velna vitae auctor and magna quaerat ligula",
+  },
+];
+
+const blogPosts = [
+  {
+    id: 1,
+    category: "Product News",
+    categoryColor: "text-pink-500",
+    title: "Aliqum mullam porta blandit: tempor sapien and gravida",
+    description:
+      "Egestas luctus vitae augue and ipsum ultrice quisque in cursus lacus feugiat congue diam ultrice laoreet sagittis",
+    author: "Helen J.",
+    date: "Apr 28, 2023",
+    image:
+      "https://martex-tailwindcss.ibthemespro.com/images/blog/post-8-img.jpg",
+  },
+  {
+    id: 2,
+    category: "Community",
+    categoryColor: "text-green-500",
+    title:
+      "Porttitor cursus fusce egestas CEO cursus at magna sapien suscipit and egestas ipsum",
+    description:
+      "Aliqum mullam ipsum vitae and blandit vitae tempor sapien and donec lipsum",
+    author: "Martex Team",
+    date: "Apr 14, 2023",
+    image:
+      "https://martex-tailwindcss.ibthemespro.com/images/blog/post-2-img.jpg",
+  },
+  {
+    id: 3,
+    category: "Freelancer Tips",
+    categoryColor: "text-purple-500",
+    title: "Cubilia laoreet augue egestas and Martex magna impedit",
+    description:
+      "Luctus vitae egestas augue and ipsum ultrice quisque in cursus lacus feugiat eget congue ultrice sagittis laoreet",
+    author: "Miranda Green",
+    date: "Mar 27, 2023",
+    image:
+      "https://martex-tailwindcss.ibthemespro.com/images/blog/post-5-img.jpg",
+  },
+];
+
+const About = () => {
+  const data = {
+    logo: logoblue,
+    logoscroll: logoblue,
+    bg: "bg-white",
+    link_color: "text-[#353f4f]",
+    btn_color: "bg-[#1680fb]",
+    btn_text: "Get Started",
+    text: "text-[#353f4f]",
+  };
+  return (
+    <section className="px-2">
+      <Navbar data={data} />
+
+      {/* About Hero Section */}
+      <section className="mx-auto mt-24 max-w-7xl pt-14 sm:pt-20">
+        <div className="container max-w-4xl px-2 mx-auto xl:mx-0">
+          <h1 className="md:text-5xl text-3xl xl:text-6xl text-[#353f4f] font-semibold leading-tight">
+            We provide solutions <br className="block sm:hidden" /> for your{" "}
+            <br className="hidden sm:block" />
+            creative ideas
+          </h1>
+          <p className="md:max-w-2xl xl:max-w-full py-6 sm:py-10 leading-6 text-[#6c757d] md:text-base xl:text-xl">
+            An enim nullam tempor sapien gravida donec pretium ipsum porta justo
+            integer and purus velna vitae auctor integer undo congue diam purus
+            pretium and ligula tempor primis libero at tempus, blandit and
+            cursus varius magnis at sapien egestas purus vitae purus an ipsum
+          </p>
+        </div>
+
+        <div className="container py-4 sm:py-8 max-auto max-w-7xl">
+          <div className="flex flex-wrap gap-4 max-auto sm:gap-0">
+            <div className="max-w-full px-2 xl:w-5/12 lg:max-xl:w-5/12 md:5/12">
+              <div className="text-end">
+                <div className="sm:block hidden ml-[13%] rounded-[12px] !mb-[30px] overflow-hidden lg:max-xl:ml-[3%]">
+                  <img src={a21} alt="a2-1" className="rounded-[12px]" />
+                </div>
+                <div className="overflow-hidden sm:rounded-[12px] sm:!ml-[-10px]">
+                  <img src={a22} alt="a2-2" className="sm:rounded-[12px]" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full max-w-full px-2 xl:w-7/12 lg:max-xl:w-7/12 md:max-lg:w-7/12">
+              <div className="overflow-hidden sm:mr-[-10%] !mb-[30px] md:max-lg:mr-[-8%] md:max-lg:mb-[20px]">
+                <img src={a23} alt="a2-3" className="rounded-[12px]" />
+              </div>
+              <div className="flex flex-wrap">
+                <div className="w-full max-w-full sm:px-2 md:w-7/12 lg:max-xl:w-6/12 xl:w-6/12">
+                  <div className="bg-[#2e3648] flex flex-col justify-center h-full py-10 sm:px-6 px-4 md:px-8 text-base sm:text-lg rounded-[12px] text-white gap-4 ">
+                    <p className="font-medium">
+                      Nullam tempor pretium a gravida donec congue ipsum porta
+                      justo integer dolor odio auctor a neque suscipit an ipsum
+                      integer congue purus at pretium turpis egestas and volute
+                      laoreet quaerat
+                    </p>
+                    <div className="flex flex-col gap-0">
+                      <span className="font-bold">Charlie Cheever</span>
+                      <span>CEO & CO-FOUNDER</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="sm:block hidden max-w-full md:w-5/12 lg:max-xl:w-6/12 xl:w-6/12 w-full px-2 overflow-hidden rounded-[12px]">
+                  <img src={a24} alt="" className="rounded-[12px]" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Results */}
+      <section className="px-2 py-10 mx-auto sm:px-10 xl:px-0 max-w-7xl">
+        <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2">
+          <div className="md:text-base xl:text-xl text-[#6c757d]">
+            <h3 className="text-xl md:text-2xl xl:text-3xl text-[#353f4f] font-semibold mb-6">
+              Mission and impact
+            </h3>
+            <p className="mb-4">
+              Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+              neque auctor turpis vitae dolor luctus placerat magna and ligula
+              cursus purus vitae purus an ipsum suscipit
+            </p>
+            <ul className="pl-5 space-y-8 list-disc">
+              <li>
+                Tempor sapien quaerat an ipsum laoreet purus and sapien dolor an
+                ultrice ipsum aliquam undo congue dolor cursus
+              </li>
+              <li>
+                Cursus purus suscipit vitae cubilia magnis volute egestas vitae
+                sapien turpis ultrice auctor congue magna placerat
+              </li>
+            </ul>
+          </div>
+          <div className="md:text-base xl:text-xl text-[#6c757d]">
+            <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold text-[#353f4f] mb-6">
+              We deliver results
+            </h3>
+            <p className="mb-4">
+              Nemo ipsam egestas volute turpis egestas ipsum and purus sapien
+              ultrice an aliquam quaerat ipsum augue turpis sapien cursus congue
+              magna purus quaerat at ligula purus egestas magna cursus undo
+              varius purus magnis sapien quaerat
+            </p>
+            <p>
+              Egestas volute nemo ipsam turpis egestas ipsum and purus sapien
+              ultrice an aliquam quaerat ipsum augue turpis sapien cursus congue
+              magna purus quaerat at ligula purus egestas magna cursus undo
+              varius purus quaerat sapien magnis
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* State Section */}
+      <section className="px-4 py-20 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 text-center xl:gap-12 md:grid-cols-3 sm:text-start">
+            {statsData.map((item) => (
+              <div key={item.id} className="px-2">
+                <h3 className="xl:text-6xl text-4xl font-bold text-[#353f4f]">
+                  {item.value}
+                </h3>
+                <div className="w-full h-px my-4 bg-gray-300" />
+
+                <h4 className="xl:text-2xl text-xl font-semibold text-[#353f4f]">
+                  {item.title}
+                </h4>
+
+                <p className="mt-3 text-[#6c757d] text-base xl:text-lg">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="px-2 py-10 xl:px-0 bg-[#F4F4FE] max-w-full">
+        <div className="container mx-auto sm:px-0 max-w-7xl">
+          <div className="grid items-center max-w-full grid-cols-1 gap-6 mx-auto xl:gap-2 xl:max-w-full sm:grid-cols-2 md:max-w-4xl">
+            {/* Content */}
+            <div className="order-2 sm:mt-0 sm:order-1">
+              <span className="uppercase text-sm xl:text-base text-[#6c757d] font-semibold">
+                Co-founder at Martex
+              </span>
+              <h1 className="mt-6 text-[#353f4f] text-3xl md:text-5xl xl:text-6xl font-bold">
+                Henry Adams
+              </h1>
+              <p className="mt-4 md:text-lg/8 text-lg/8 xl:text-[22px]/8  text-[#6c757d]">
+                "Sodales tempor sapien diam purus ipsum quaerat and volute fusce
+                a congue laoreet turpis neque diam auctor turpis vitae dolor
+                magna luctus placerat neque ipsum fusce cursus ligula cursus
+                purus vitae purus and ipsum suscipit. Nemo ipsam cubilia donec
+                turpis undo egestas ipsum a purus sapien ultrice aliquam lacus
+                and quaerat an ipsum augue turpis sapien cursus congue augue"
+              </p>
+            </div>
+            {/* Image & Video */}
+            <div className="relative order-1 w-full max-w-md mt-10 sm:order-2 lg:mt-0 xl:ml-10 lg:max-w-lg xl:max-w-xl">
+              <img
+                src="https://martex-tailwindcss.ibthemespro.com/images/img-17.jpg"
+                alt="img & video"
+                className="rounded-2xl"
+              />
+              <div className="absolute p-4 top-[40%] left-[42%] flex items-center justify-center  text-white bg-[#1680fb] rounded-full shadow-lg cursor-pointer hover:bg-[#185abd] lg:w-24 lg:h-24">
+                <span className="">
+                  <Play className="w-10 h-10 ml-1 lg:w-14 lg:h-14" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 */}
+      <div className="px-0 py-10 mx-auto mt-10 max-w-7xl sm:px-0">
+        <div className="px-2 mx-auto text-center">
+          <h1 className="xl:text-6xl text-[#353f4f] font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
+            We make your business gain more <br className="hidden sm:block" />{" "}
+            revenue at a glance
+          </h1>
+          <span className="text-[#6c757d] md:text-xl xl:text-2xl text-xl sm:text-lg">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </span>
+        </div>
+        <Services />
+      </div>
+
+      <Company title={"Trusted and used by over 3,400 companies"} />
+
+      <TeamSection />
+
+      {/* Why choose us */}
+      <section className="py-10 mx-auto sm:px-12 xl:px-2">
+        <div className="container mx-auto">
+          <div className="sm:px-12 py-14 mx-auto max-w-[1300px] bg-[#f4f4f9] rounded-[12px]">
+            <div className="grid items-center grid-cols-1 gap-6 sm:grid-cols-2">
+              {/* content */}
+              <div className="order-2 px-2 xl:px-0 sm:px-4 sm:order-1">
+                <h4 className="uppercase text-sm mb-6 xl:text-base text-[#6c757d] font-semibold">
+                  Why Choose Us
+                </h4>
+                <h1 className="mb-6 text-[#353f4f] text-2xl leading-normal md:text-4xl xl:text-6xl font-bold">
+                  With knowledge, <br /> skills & hard work
+                </h1>
+                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                  Sodales tempor sapien quaerat congue eget ipsum laoreet turpis
+                  neque auctor vitae eros dolor luctus placerat magna ligula
+                  cursus and purus pretium
+                </p>
+                <h3 className="text-[#353f4f] text-xl sm:text-2xl xl:text-3xl font-semibold mb-5">
+                  Your road to success!
+                </h3>
+                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                  Sapien tempor sodales quaerat ipsum undo congue laoreet turpis
+                  neque auctor turpis vitae dolor luctus placerat magna and
+                  ligula cursus purus vitae
+                </p>
+              </div>
+              {/* image */}
+              <div className="order-1 px-2 xl:px-0 sm:px-4 sm:order-2">
+                <img
+                  src="https://martex-tailwindcss.ibthemespro.com/images/img-08.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* strategies */}
+      <section className="py-10 mx-auto sm:px-12 xl:px-2">
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-[1350px]">
+            <div className="grid items-center grid-cols-1 gap-2 xl:gap-6 sm:grid-cols-2">
+              {/* content */}
+              <div className="order-2 px-2 xl:px-6 sm:px-2">
+                <h4 className="uppercase text-sm mb-8 xl:text-base text-[#6c757d] font-semibold">
+                  Strategies That Work
+                </h4>
+                <h1 className="mb-7 text-[#353f4f] text-2xl leading-normal md:text-5xl xl:text-6xl font-bold">
+                  Right strategies & implementations
+                </h1>
+                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                  Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+                  neque auctor turpis vitae dolor luctus placerat magna and
+                  ligula cursus purus vitae purus an ipsum suscipit
+                </p>
+
+                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                  Nemo ipsam egestas volute turpis egestas ipsum and purus
+                  sapien ultrice an aliquam quaerat ipsum augue turpis sapien
+                  cursus congue magna purus quaerat at ligula purus egestas
+                  magna cursus undo varius purus magnis sapien quaerat
+                </p>
+              </div>
+              {/* image */}
+              <div className="order-1 px-2 xl:px-0 sm:px-4">
+                <img
+                  src="https://martex-tailwindcss.ibthemespro.com/images/img-07.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <TestimonialsSection />
+
+      {/* digital marketing */}
+      <section className="bg-[#f4f4f9] sm:py-20 !max-w-full w-full py-16">
+        <div className="container px-2 mx-auto max-w-7xl">
+          <div className="grid items-center grid-cols-1 gap-4 sm:grid-cols-2 xl:px-0 sm:px-12">
+            {/* Content */}
+            <div className="order-2 px-2 xl:px-0 sm:order-1">
+              <h4 className="uppercase text-sm mb-8 xl:text-base text-[#6c757d] font-semibold">
+                One-Stop Solution
+              </h4>
+              <h1 className="mb-7 text-[#353f4f] text-2xl leading-normal md:text-5xl xl:text-6xl font-bold">
+                Data-driven digital marketing
+              </h1>
+              <ul className="sm:max-w-sm xl:max-w-lg ml-4 space-y-5 list-disc text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                <li>
+                  Tempor sapien quaerat undo ipsum laoreet purus and sapien
+                  dolor ociis ultrice ipsum aliquam undo congue dolor cursus
+                  congue varius magnis
+                </li>
+                <li>
+                  Cursus purus suscipit vitae cubilia magnis diam volute egestas
+                  sapien ultrice auctor
+                </li>
+              </ul>
+            </div>
+            {/* images */}
+            <div className="w-full px-2 md:px-0 oreder-1 sm:order-2">
+              <img
+                src="https://martex-tailwindcss.ibthemespro.com/images/img-14.png"
+                alt="digital marketing"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Articles & Resources Section */}
+      <section className="px-2 py-10 sm:px-0">
+        <div className="container mx-auto max-w-7xl">
+          <div className="px-2 mx-auto text-center">
+            <h1 className="xl:text-6xl text-[#353f4f] font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
+              Articles & Resources
+            </h1>
+            <span className="text-[#6c757d] md:text-xl xl:text-2xl text-xl sm:text-lg">
+              Ligula risus auctor tempus magna feugiat lacinia.
+            </span>
+          </div>
+          <div className="mt-10">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {blogPosts.map((post) => {
+                return (
+                  <div className="px-0 py-4 xl:px-2">
+                    {/* blog image */}
+                    <div className="rounded-[12px]">
+                      <img
+                        src={post.image}
+                        alt={post.category}
+                        className="rounded-[12px]"
+                      />
+                    </div>
+                    <div className="mt-5">
+                      <span
+                        className={`uppercase ${post.categoryColor} text-[12px] font-medium xl:text-sm mt-2`}
+                      >
+                        {post.category}
+                      </span>
+                      <h3 className="mt-2 text-lg sm:text-xl xl:text-[22px] font-semibold text-[#353f4f]">
+                        {post.title}
+                      </h3>
+                      <p className="mt-2 text-base sm:text-base/7 xl:text-lg/8 text-[#6c757d]">
+                        {post.description}
+                      </p>
+                      <p className="mt-4 text-base xl:text-lg  text-[#353f4f]">
+                        <span className="font-semibold">By {post.author}</span>{" "}
+                        | {post.date}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* News Letter Section */}
+      <section className="px-4 py-20 bg-white">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-16 border-t border-gray-200" />
+
+          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+            <h2 className="max-w-xl md:text-3xl text-center sm:text-start text-2xl font-semibold text-[#353f4f] xl:text-[38px] !leading-normal">
+              Stay up to date with our news,
+              <br className="hidden sm:block" />
+              ideas and updates
+            </h2>
+
+            <div className="flex flex-wrap w-full max-w-md gap-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-1 focus:ring-black"
+              />
+              <button className="px-6 py-3 w-full sm:w-auto font-semibold text-white transition bg-[#1680fb] duration-300 rounded-lg hover:bg-[#185abd] whitespace-nowrap">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="mt-16 border-t border-gray-200" />
+        </div>
+      </section>
+      <Footer logo={logo} />
+    </section>
+  );
+};
+
+export default About;

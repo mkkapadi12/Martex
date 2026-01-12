@@ -55,7 +55,7 @@ export default function Home() {
       <Automate />
       <FAQSection get_color={"text-[#f74780]"} />
       <CTASection cta_data={cta_data} />
-      <Footer />
+      <Footer logo={logopink}/>
     </>
   );
 }

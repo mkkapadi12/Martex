@@ -1,6 +1,6 @@
 import brand1 from "../assets/images/brands/brand-1.png";
 import brand2 from "../assets/images/brands/brand-2.png";
-import brand3 from "../assets/images/brands/brand-3-white.png";
+// import brand3 from "../assets/images/brands/brand-3-white.png";
 import brand4 from "../assets/images/brands/brand-4.png";
 import brand5 from "../assets/images/brands/brand-5.png";
 import brand6 from "../assets/images/brands/brand-6.png";
@@ -16,10 +16,6 @@ export const brandData = [
   {
     id: 2,
     img: brand2,
-  },
-  {
-    id: 3,
-    img: brand3,
   },
   {
     id: 4,
