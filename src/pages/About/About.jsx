@@ -12,6 +12,8 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "../../components/Footer";
 import logo from "../../assets/images/logo-blue.png";
 import { Play } from "lucide-react";
+import Blogcards from "../Blog/components/blogcards";
+import NewsLetter from "../../components/NewsLetter";
 
 const statsData = [
   {
@@ -392,72 +394,12 @@ const About = () => {
               Ligula risus auctor tempus magna feugiat lacinia.
             </span>
           </div>
-          <div className="mt-10">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {blogPosts.map((post) => {
-                return (
-                  <div className="px-0 py-4 xl:px-2">
-                    {/* blog image */}
-                    <div className="rounded-[12px]">
-                      <img
-                        src={post.image}
-                        alt={post.category}
-                        className="rounded-[12px]"
-                      />
-                    </div>
-                    <div className="mt-5">
-                      <span
-                        className={`uppercase ${post.categoryColor} text-[12px] font-medium xl:text-sm mt-2`}
-                      >
-                        {post.category}
-                      </span>
-                      <h3 className="mt-2 text-lg sm:text-xl xl:text-[22px] font-semibold text-[#353f4f]">
-                        {post.title}
-                      </h3>
-                      <p className="mt-2 text-base sm:text-base/7 xl:text-lg/8 text-[#6c757d]">
-                        {post.description}
-                      </p>
-                      <p className="mt-4 text-base xl:text-lg  text-[#353f4f]">
-                        <span className="font-semibold">By {post.author}</span>{" "}
-                        | {post.date}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <Blogcards blogPosts={blogPosts} />
         </div>
       </section>
 
       {/* News Letter Section */}
-      <section className="px-4 py-20 bg-white">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-16 border-t border-gray-200" />
-
-          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-            <h2 className="max-w-xl md:text-3xl text-center sm:text-start text-2xl font-semibold text-[#353f4f] xl:text-[38px] !leading-normal">
-              Stay up to date with our news,
-              <br className="hidden sm:block" />
-              ideas and updates
-            </h2>
-
-            <div className="flex flex-wrap w-full max-w-md gap-4">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg outline-none focus:ring-1 focus:ring-black"
-              />
-              <button className="px-6 py-3 w-full sm:w-auto font-semibold text-white transition bg-[#1680fb] duration-300 rounded-lg hover:bg-[#185abd] whitespace-nowrap">
-                Subscribe Now
-              </button>
-            </div>
-          </div>
-
-          {/* Divider */}
-          <div className="mt-16 border-t border-gray-200" />
-        </div>
-      </section>
+      <NewsLetter />
       <Footer logo={logo} />
     </section>
   );

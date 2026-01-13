@@ -24,8 +24,8 @@ export default function Navbar({ data }) {
       }`}
     >
       <nav
-        className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-7xl lg:px-8 ${
-          scrolled ? "py-6" : "py-7"
+        className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-6xl lg:px-8 ${
+          scrolled ? "py-3" : "py-7"
         }`}
       >
         {/* Logo */}
@@ -35,12 +35,12 @@ export default function Navbar({ data }) {
 
         {/* Desktop Menu */}
         <div
-          className={`hidden pr-4 font-semibold lg:flex gap-x-12 transition-all duration-300 ${
-            scrolled ? "text-gray-700" : `${link_color}`
+          className={`hidden lg:flex gap-x-10 transition-all duration-300 ${
+            scrolled ? "text-[#353f4f ]" : `${link_color}`
           }`}
         >
           {pricingNav.map((item, index) => (
-            <Link key={index} to={item.link}>
+            <Link key={index} to={item.link} className="text-lg font-medium ">
               {item.name}
             </Link>
           ))}
@@ -50,14 +50,14 @@ export default function Navbar({ data }) {
         <div className="items-center hidden gap-4 lg:flex">
           <Link
             to="/login"
-            className={`font-semibold ${
-              scrolled ? "text-gray-700" : `${text}`
+            className={`font-semibold text-lg ${
+              scrolled ? "text-[#353f4f]" : `${text}`
             }`}
           >
             Sign in
           </Link>
           <Link to="/signup">
-            <button className={`px-4 py-2 text-white ${btn_color} rounded-md`}>
+            <button className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-[#0f6ae2] transition-all duration-300`}>
               {btn_text}
             </button>
           </Link>
