@@ -346,7 +346,9 @@ const About = () => {
         </div>
       </section>
 
-      <TestimonialsSection />
+      <TestimonialsSection
+        title={"Here’s what our amazing clients are saying"}
+      />
 
       {/* digital marketing */}
       <section className="bg-[#f4f4f9] sm:py-20 !max-w-full w-full py-16">

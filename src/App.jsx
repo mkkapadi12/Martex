@@ -9,6 +9,8 @@ import TermsOfService from "./pages/TermsOfService";
 import About from "./pages/About/About";
 import Pricing from "./pages/Pricing/Pricing";
 import Blog from "./pages/Blog/blog";
+import Project from "./pages/Project/Project";
+import SingleBlog from "./pages/Blog/SingleBlog";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/singleblog" element={<SingleBlog />} />
+        <Route path="/projects" element={<Project />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />

@@ -55,7 +55,7 @@ const Pricing = () => {
       <PricingComparisonTable />
       <FAQSection get_color={"text-[#1680fb]"} />
       <CTASection cta_data={cta_data} />
-      <Footer />
+      <Footer logo={logoblue}/>
     </main>
   );
 };

@@ -6,14 +6,14 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-export default function Footer({logo}) {
+export default function Footer({ logo }) {
   return (
     <footer className="bg-white border-0 border-gray-200">
-      <div className="px-4 py-16 mx-auto max-w-7xl">
+      <div className="container px-4 py-16 mx-auto xl:px-0 sm:px-9 xl:max-w-7xl">
         {/* Top Section */}
         <div className="grid grid-cols-2 gap-10 md:grid-cols-5">
           {/* Logo */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2 sm:col-span-1">
             <div className="flex items-center gap-2">
               <img
                 src={logo}

@@ -3,10 +3,10 @@ import React from "react";
 export default function CTASection({ cta_data }) {
   const { btn_color, btn_text, title, bg } = cta_data;
   return (
-    <section className="px-4 pb-20 bg-white">
-      <div className="mx-auto max-w-7xl">
+    <section className="bg-white sm:pb-12 sm:px-4">
+      <div className="container px-0 mx-auto xl:max-w-7xl xl:px-0 sm:px-9">
         <div
-          className="relative px-6 py-16 overflow-hidden text-center text-white bg-fixed bg-no-repeat bg-cover rounded-3xl"
+          className="relative py-16 overflow-hidden text-center text-white bg-fixed bg-no-repeat bg-cover sm:px-6 sm:rounded-3xl"
           style={{
             backgroundImage: `url(${bg})`,
           }}
@@ -22,7 +22,9 @@ export default function CTASection({ cta_data }) {
 
           {/* Button */}
           <div className="mt-8">
-            <button className={`px-10 py-3 text-lg font-semibold text-white transition-all duration-300 ${btn_color} rounded-lg hover:border hover:bg-transparent hover:border-white`}>
+            <button
+              className={`px-10 py-3 text-lg font-semibold text-white transition-all duration-300 ${btn_color} rounded-lg hover:border hover:bg-transparent hover:border-white`}
+            >
               Get started – it&apos;s free
             </button>
           </div>
