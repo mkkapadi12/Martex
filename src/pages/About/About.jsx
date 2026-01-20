@@ -81,10 +81,10 @@ const About = () => {
     logo: logoblue,
     logoscroll: logoblue,
     bg: "bg-white",
-    link_color: "text-[#353f4f]",
+    link_color: "text-martex-dark_text",
     btn_color: "bg-[#1680fb]",
     btn_text: "Get Started",
-    text: "text-[#353f4f]",
+    text: "text-martex-dark_text",
   };
   return (
     <section className="px-2">
@@ -93,12 +93,12 @@ const About = () => {
       {/* About Hero Section */}
       <section className="mx-auto mt-24 max-w-7xl pt-14 sm:pt-20">
         <div className="container max-w-4xl px-2 mx-auto xl:mx-0">
-          <h1 className="md:text-5xl text-3xl xl:text-6xl text-[#353f4f] font-semibold leading-tight">
+          <h1 className="text-3xl font-semibold leading-tight md:text-5xl xl:text-6xl text-martex-dark_text">
             We provide solutions <br className="block sm:hidden" /> for your{" "}
             <br className="hidden sm:block" />
             creative ideas
           </h1>
-          <p className="md:max-w-2xl xl:max-w-full py-6 sm:py-10 leading-6 text-[#6c757d] md:text-base xl:text-xl">
+          <p className="py-6 leading-6 md:max-w-2xl xl:max-w-full sm:py-10 text-martex-light_text md:text-base xl:text-xl">
             An enim nullam tempor sapien gravida donec pretium ipsum porta justo
             integer and purus velna vitae auctor integer undo congue diam purus
             pretium and ligula tempor primis libero at tempus, blandit and
@@ -149,8 +149,8 @@ const About = () => {
       {/* Mission & Results */}
       <section className="px-2 py-10 mx-auto sm:px-10 xl:px-0 max-w-7xl">
         <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2">
-          <div className="md:text-base xl:text-xl text-[#6c757d]">
-            <h3 className="text-xl md:text-2xl xl:text-3xl text-[#353f4f] font-semibold mb-6">
+          <div className="md:text-base xl:text-xl text-martex-light_text">
+            <h3 className="mb-6 text-xl font-semibold md:text-2xl xl:text-3xl text-martex-dark_text">
               Mission and impact
             </h3>
             <p className="mb-4">
@@ -169,8 +169,8 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="md:text-base xl:text-xl text-[#6c757d]">
-            <h3 className="text-xl md:text-2xl xl:text-3xl font-semibold text-[#353f4f] mb-6">
+          <div className="md:text-base xl:text-xl text-martex-light_text">
+            <h3 className="mb-6 text-xl font-semibold md:text-2xl xl:text-3xl text-martex-dark_text">
               We deliver results
             </h3>
             <p className="mb-4">
@@ -195,16 +195,16 @@ const About = () => {
           <div className="grid gap-8 text-center xl:gap-12 md:grid-cols-3 sm:text-start">
             {statsData.map((item) => (
               <div key={item.id} className="px-2">
-                <h3 className="xl:text-6xl text-4xl font-bold text-[#353f4f]">
+                <h3 className="text-4xl font-bold xl:text-6xl text-martex-dark_text">
                   {item.value}
                 </h3>
                 <div className="w-full h-px my-4 bg-gray-300" />
 
-                <h4 className="xl:text-2xl text-xl font-semibold text-[#353f4f]">
+                <h4 className="text-xl font-semibold xl:text-2xl text-martex-dark_text">
                   {item.title}
                 </h4>
 
-                <p className="mt-3 text-[#6c757d] text-base xl:text-lg">
+                <p className="mt-3 text-base text-martex-light_text xl:text-lg">
                   {item.desc}
                 </p>
               </div>
@@ -219,13 +219,13 @@ const About = () => {
           <div className="grid items-center max-w-full grid-cols-1 gap-6 mx-auto xl:gap-2 xl:max-w-full sm:grid-cols-2 md:max-w-4xl">
             {/* Content */}
             <div className="order-2 sm:mt-0 sm:order-1">
-              <span className="uppercase text-sm xl:text-base text-[#6c757d] font-semibold">
+              <span className="text-sm font-semibold uppercase xl:text-base text-martex-light_text">
                 Co-founder at Martex
               </span>
-              <h1 className="mt-6 text-[#353f4f] text-3xl md:text-5xl xl:text-6xl font-bold">
+              <h1 className="mt-6 text-3xl font-bold text-martex-dark_text md:text-5xl xl:text-6xl">
                 Henry Adams
               </h1>
-              <p className="mt-4 md:text-lg/8 text-lg/8 xl:text-[22px]/8  text-[#6c757d]">
+              <p className="mt-4 md:text-lg/8 text-lg/8 xl:text-[22px]/8  text-martex-light_text">
                 "Sodales tempor sapien diam purus ipsum quaerat and volute fusce
                 a congue laoreet turpis neque diam auctor turpis vitae dolor
                 magna luctus placerat neque ipsum fusce cursus ligula cursus
@@ -254,11 +254,11 @@ const About = () => {
       {/* Section 5 */}
       <div className="px-0 py-10 mx-auto mt-10 max-w-7xl sm:px-0">
         <div className="px-2 mx-auto text-center">
-          <h1 className="xl:text-6xl text-[#353f4f] font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
+          <h1 className="xl:text-6xl text-martex-dark_text font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
             We make your business gain more <br className="hidden sm:block" />{" "}
             revenue at a glance
           </h1>
-          <span className="text-[#6c757d] md:text-xl xl:text-2xl text-xl sm:text-lg">
+          <span className="text-xl text-martex-light_text md:text-xl xl:text-2xl sm:text-lg">
             Ligula risus auctor tempus magna feugiat lacinia.
           </span>
         </div>
@@ -276,21 +276,21 @@ const About = () => {
             <div className="grid items-center grid-cols-1 gap-6 sm:grid-cols-2">
               {/* content */}
               <div className="order-2 px-2 xl:px-0 sm:px-4 sm:order-1">
-                <h4 className="uppercase text-sm mb-6 xl:text-base text-[#6c757d] font-semibold">
+                <h4 className="mb-6 text-sm font-semibold uppercase xl:text-base text-martex-light_text">
                   Why Choose Us
                 </h4>
-                <h1 className="mb-6 text-[#353f4f] text-2xl leading-normal md:text-4xl xl:text-6xl font-bold">
+                <h1 className="mb-6 text-2xl font-bold leading-normal text-martex-dark_text md:text-4xl xl:text-6xl">
                   With knowledge, <br /> skills & hard work
                 </h1>
-                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                <p className="mb-5 font-medium text-martex-light_text xl:text-lg/8 text-base/8">
                   Sodales tempor sapien quaerat congue eget ipsum laoreet turpis
                   neque auctor vitae eros dolor luctus placerat magna ligula
                   cursus and purus pretium
                 </p>
-                <h3 className="text-[#353f4f] text-xl sm:text-2xl xl:text-3xl font-semibold mb-5">
+                <h3 className="mb-5 text-xl font-semibold text-martex-dark_text sm:text-2xl xl:text-3xl">
                   Your road to success!
                 </h3>
-                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                <p className="mb-5 font-medium text-martex-light_text xl:text-lg/8 text-base/8">
                   Sapien tempor sodales quaerat ipsum undo congue laoreet turpis
                   neque auctor turpis vitae dolor luctus placerat magna and
                   ligula cursus purus vitae
@@ -315,19 +315,19 @@ const About = () => {
             <div className="grid items-center grid-cols-1 gap-2 xl:gap-6 sm:grid-cols-2">
               {/* content */}
               <div className="order-2 px-2 xl:px-6 sm:px-2">
-                <h4 className="uppercase text-sm mb-8 xl:text-base text-[#6c757d] font-semibold">
+                <h4 className="mb-8 text-sm font-semibold uppercase xl:text-base text-martex-light_text">
                   Strategies That Work
                 </h4>
-                <h1 className="mb-7 text-[#353f4f] text-2xl leading-normal md:text-5xl xl:text-6xl font-bold">
+                <h1 className="text-2xl font-bold leading-normal mb-7 text-martex-dark_text md:text-5xl xl:text-6xl">
                   Right strategies & implementations
                 </h1>
-                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                <p className="mb-5 font-medium text-martex-light_text xl:text-lg/8 text-base/8">
                   Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
                   neque auctor turpis vitae dolor luctus placerat magna and
                   ligula cursus purus vitae purus an ipsum suscipit
                 </p>
 
-                <p className="mb-5 text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+                <p className="mb-5 font-medium text-martex-light_text xl:text-lg/8 text-base/8">
                   Nemo ipsam egestas volute turpis egestas ipsum and purus
                   sapien ultrice an aliquam quaerat ipsum augue turpis sapien
                   cursus congue magna purus quaerat at ligula purus egestas
@@ -356,13 +356,13 @@ const About = () => {
           <div className="grid items-center grid-cols-1 gap-4 sm:grid-cols-2 xl:px-0 sm:px-12">
             {/* Content */}
             <div className="order-2 px-2 xl:px-0 sm:order-1">
-              <h4 className="uppercase text-sm mb-8 xl:text-base text-[#6c757d] font-semibold">
+              <h4 className="mb-8 text-sm font-semibold uppercase xl:text-base text-martex-light_text">
                 One-Stop Solution
               </h4>
-              <h1 className="mb-7 text-[#353f4f] text-2xl leading-normal md:text-5xl xl:text-6xl font-bold">
+              <h1 className="text-2xl font-bold leading-normal mb-7 text-martex-dark_text md:text-5xl xl:text-6xl">
                 Data-driven digital marketing
               </h1>
-              <ul className="sm:max-w-sm xl:max-w-lg ml-4 space-y-5 list-disc text-[#6c757d] xl:text-lg/8 text-base/8 font-medium">
+              <ul className="ml-4 space-y-5 font-medium list-disc sm:max-w-sm xl:max-w-lg text-martex-light_text xl:text-lg/8 text-base/8">
                 <li>
                   Tempor sapien quaerat undo ipsum laoreet purus and sapien
                   dolor ociis ultrice ipsum aliquam undo congue dolor cursus
@@ -389,10 +389,10 @@ const About = () => {
       <section className="px-2 py-10 sm:px-0">
         <div className="container mx-auto max-w-7xl">
           <div className="px-2 mx-auto text-center">
-            <h1 className="xl:text-6xl text-[#353f4f] font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
+            <h1 className="xl:text-6xl text-martex-dark_text font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
               Articles & Resources
             </h1>
-            <span className="text-[#6c757d] md:text-xl xl:text-2xl text-xl sm:text-lg">
+            <span className="text-xl text-martex-light_text md:text-xl xl:text-2xl sm:text-lg">
               Ligula risus auctor tempus magna feugiat lacinia.
             </span>
           </div>

@@ -24,7 +24,7 @@ export default function Home() {
   const data = {
     logo: logowhite,
     logoscroll: logopink,
-    bg: "bg-[#8a4be0]",
+    // bg: "bg-[#8a4be0]",
     link_color: "text-[#fff]",
     btn_color: "bg-[#f74780]",
     btn_text: "Sign up",

@@ -6,7 +6,7 @@ import { homeNav, pricingNav } from "../Data/navigation";
 export default function Navbar({ data }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { text, logo, logoscroll, bg, link_color, btn_color, btn_text } = data;
+  const { text, logo, logoscroll, link_color, btn_color, btn_text } = data;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +20,7 @@ export default function Navbar({ data }) {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#ffffffb3] shadow-md opacity-100" : `bg-${bg}`
+        scrolled ? "bg-[#ffffffb3] shadow-md opacity-100" : `bg-transparent`
       }`}
     >
       <nav
@@ -57,7 +57,9 @@ export default function Navbar({ data }) {
             Sign in
           </Link>
           <Link to="/signup">
-            <button className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-[#0f6ae2] transition-all duration-300`}>
+            <button
+              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-[#0f6ae2] transition-all duration-300`}
+            >
               {btn_text}
             </button>
           </Link>
