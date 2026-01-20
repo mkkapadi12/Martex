@@ -19,7 +19,7 @@ export default function Hero() {
               Mauris donec turpis suscipit sapien ociis sagittis sapien tempor a
               volute ligula and aliquet tortor
             </p>
-            <button className="px-6 py-3 text-white bg-pink-500 rounded">
+            <button className="px-6 py-3 text-white rounded bg-martex-light_pink">
               Get Started for free
             </button>
             <p className="mt-4 text-lg text-white">

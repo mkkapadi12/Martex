@@ -134,10 +134,10 @@ const Blog = () => {
     logoscroll:
       "https://martex-tailwindcss.ibthemespro.com/images/logo-blog.png",
     bg: "bg-white",
-    link_color: "text-[#353f4f]",
+    link_color: "text-martex-dark_text",
     btn_color: "bg-[#1680fb]",
     btn_text: "Get Started",
-    text: "text-[#353f4f]",
+    text: "text-martex-dark_text",
   };
 
   return (
@@ -160,15 +160,15 @@ const Blog = () => {
               <h3 className="mb-3 text-[12px] font-semibold text-blue-500 uppercase sm:text-sm md:mb-4 xl:mb-8">
                 Social Media Marketing
               </h3>
-              <h2 className="mb-1 md:text-4xl text-xl xl:text-[43px] hover:underline cursor-pointer !leading-[1.35] font-bold text-[#353f4f]">
+              <h2 className="mb-1 md:text-4xl text-xl xl:text-[43px] hover:underline cursor-pointer !leading-[1.35] font-bold text-martex-dark_text">
                 Congue magna tempor and ipsum Martex sapien turpis laoreet augue
               </h2>
-              <p className="text-[15px] sm:text-base xl:text-lg text-[#6c757d] font-medium mb-4">
+              <p className="text-[15px] sm:text-base xl:text-lg text-martex-light_text font-medium mb-4">
                 Aliqum mullam blandit vitae and tempor sapien and donec lipsum
                 gravida porta undo velna dolor libero a risus aliquet tempus
                 posuere a tempor velna tempus posuere dolor
               </p>
-              <h3 className="text-[15px] sm:text-base xl:text-lg font-semibold text-[#353f4f]">
+              <h3 className="text-[15px] sm:text-base xl:text-lg font-semibold text-martex-dark_text">
                 By Martex Team{" "}
                 <span className="font-medium">| Apr 28, 2023</span>
               </h3>
@@ -183,7 +183,7 @@ const Blog = () => {
         {/* Latest News */}
         <section className="py-0 latets-news-section">
           <div className="mx-auto xl:max-w-[1300px] container px-4 sm:px-9 xl:px-4 my-8 sm:my-[40px] xl:my-14">
-            <h1 className="flex items-center justify-start text-2xl sm:text-3xl xl:text-[40px] font-semibold text-[#353f4f]">
+            <h1 className="flex items-center justify-start text-2xl sm:text-3xl xl:text-[40px] font-semibold text-martex-dark_text">
               Latest News <ChevronRight className="w-8 h-8" />
             </h1>
           </div>
@@ -229,7 +229,7 @@ const Blog = () => {
         {/* All Stories */}
         <section className="py-0 latets-news-section">
           <div className="mx-auto xl:max-w-[1300px] container px-4 sm:px-9 xl:px-4 my-8 sm:my-[40px] xl:my-14">
-            <h1 className="flex items-center justify-start text-2xl sm:text-3xl xl:text-[40px] font-semibold text-[#353f4f]">
+            <h1 className="flex items-center justify-start text-2xl sm:text-3xl xl:text-[40px] font-semibold text-martex-dark_text">
               All Stories <ChevronRight className="w-8 h-8" />
             </h1>
           </div>

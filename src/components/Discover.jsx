@@ -7,7 +7,7 @@ const Discover = () => {
     <div className="py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#353f4f] mb-6 max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-martex-dark_text mb-6 max-w-4xl mx-auto text-center">
             Discover insights across all your data with Martex
           </h1>
           <p className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-center text-gray-600 sm:text-xl">
@@ -22,10 +22,10 @@ const Discover = () => {
           />
         </div>
         <div className="mt-12 space-y-4 text-center">
-          <button className="inline-flex items-center px-8 py-3 border-2 border-[#353f4f] rounded-md text-base font-semibold text-[#353f4f] hover:bg-[#f74780] hover:border-[#f74780] hover:text-white transition-colors duration-300">
+          <button className="inline-flex items-center px-8 py-3 border-2 border-martex-dark_text rounded-md text-base font-semibold text-martex-dark_text hover:bg-martex-light_pink hover:border-martex-light_pink hover:text-white transition-colors duration-300">
             Monitor your activity
           </button>
-          <p className="text-[#6c757d]">
+          <p className="text-martex-light_text">
             Free 14 days trial | Exclusive Support | No Fees
           </p>
         </div>
@@ -45,7 +45,7 @@ const Discover = () => {
                 <span className="w-[3px] lg:h-[90px] bg-[#e4e4e4]"></span>
               </div>
               <div className="mt-3">
-                <h2 className="text-2xl font-semibold text-[#353f4f]">
+                <h2 className="text-2xl font-semibold text-martex-dark_text">
                   Register in 30 seconds
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
@@ -63,7 +63,7 @@ const Discover = () => {
                 <span className="w-[3px] lg:h-[90px] bg-[#e4e4e4]"></span>
               </div>
               <div className="mt-3">
-                <h2 className="text-2xl font-semibold text-[#353f4f]">
+                <h2 className="text-2xl font-semibold text-martex-dark_text">
                   Customizable Dashboards
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">
@@ -81,7 +81,7 @@ const Discover = () => {
                 <span className="w-[3px] lg:h-[90px] bg-[#e4e4e4]"></span>
               </div>
               <div className="mt-3">
-                <h2 className="text-2xl font-semibold text-[#353f4f]">
+                <h2 className="text-2xl font-semibold text-martex-dark_text">
                   Improved Productivity
                 </h2>
                 <p className="mt-4 text-lg text-gray-600">

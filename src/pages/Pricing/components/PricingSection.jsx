@@ -62,18 +62,22 @@ export default function PricingSection() {
             className="flex flex-col p-6 bg-white shadow-lg sm:p-8 rounded-2xl"
           >
             {/* Title */}
-            <h3 className="text-3xl font-bold text-[#353f4f]">{plan.title}</h3>
+            <h3 className="text-3xl font-bold text-martex-dark_text">
+              {plan.title}
+            </h3>
 
             {/* Price */}
             <div className="flex items-end gap-2 mt-4">
-              <span className="text-5xl font-bold text-[#353f4f]">
+              <span className="text-5xl font-bold text-martex-dark_text">
                 {plan.price}
               </span>
-              <span className="text-xl text-[#6c757d]">{plan.duration}</span>
+              <span className="text-xl text-martex-light_text">
+                {plan.duration}
+              </span>
             </div>
 
             {/* Description */}
-            <p className="mt-4 text-[#6c757d]">{plan.description}</p>
+            <p className="mt-4 text-martex-light_text">{plan.description}</p>
 
             {/* Button */}
             <button
@@ -83,7 +87,7 @@ export default function PricingSection() {
             </button>
 
             {/* Note */}
-            <p className="mt-3 text-base text-center text-[#6c757d]">
+            <p className="mt-3 text-base text-center text-martex-light_text">
               {plan.note}
             </p>
 
@@ -93,7 +97,7 @@ export default function PricingSection() {
                 <li
                   key={index}
                   className={`flex items-start gap-3 font-medium text-lg ${
-                    feature.enabled ? "text-[#353f4f]" : "text-gray-400"
+                    feature.enabled ? "text-martex-dark_text" : "text-gray-400"
                   }`}
                 >
                   <span>{feature.enabled ? "✓" : "✓"}</span>

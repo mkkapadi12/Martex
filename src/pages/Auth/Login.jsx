@@ -58,7 +58,7 @@ export default function Login() {
             <span>Sign in with Google</span>
           </button>
 
-          <div className="flex items-center gap-4 my-6 text-base text-gray-600">
+          <div className="flex items-center gap-4 my-6 text-base text-martex-dark_text">
             <span className="flex-1 h-px bg-gray-200" />
             Or, sign in with your email
             <span className="flex-1 h-px bg-gray-200" />
@@ -98,21 +98,21 @@ export default function Login() {
             </div>
 
             <div className="text-left">
-              <a href="#" className="text-base text-blue-700 hover:underline">
+              <a href="#" className="text-base text-martex-dark_blue hover:underline">
                 Forgot your password?
               </a>
             </div>
 
-            <button className="w-full py-3 font-semibold text-white transition-all bg-blue-600 rounded-lg duration-400 hover:bg-blue-700">
+            <button className="w-full py-3 font-semibold text-white transition-all duration-300 rounded-lg bg-martex-light_blue hover:bg-martex-dark_blue">
               Log In
             </button>
           </form>
 
-          <p className="mt-6 text-base text-center text-gray-600">
+          <p className="mt-6 text-base text-center text-martex-dark_text">
             Don't have an account?
             <Link
               to="/signup"
-              className="pl-1 font-semibold text-blue-600 underline hover:text-[#454a4e] transition-all duration-300"
+              className="pl-1 font-semibold underline transition-all duration-300 text-martex-light_blue hover:text-martex-dark_text"
             >
               Sign up
             </Link>

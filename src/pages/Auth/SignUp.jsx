@@ -85,12 +85,15 @@ export default function SignUp() {
                 By clicking “Create Account”, you agree to our{" "}
                 <Link
                   to="/terms"
-                  className="font-semibold text-[#6c757d] underline"
+                  className="font-semibold text-martex-light_text underline"
                 >
                   Terms
                 </Link>{" "}
                 and that you have read our{" "}
-                <Link to="/privacy" className="font-semibold text-[#6c757d] underline">
+                <Link
+                  to="/privacy"
+                  className="font-semibold text-martex-light_text underline"
+                >
                   Privacy Policy
                 </Link>
               </span>

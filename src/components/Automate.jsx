@@ -32,7 +32,7 @@ export default function Automate() {
   return (
     <section className="container py-20 mx-auto ">
       <div className="mx-auto text-center max-w-7xl bg-[#f6f7fb] rounded-xl px-7 py-14">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-[#353f4f]">
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-martex-dark_text">
           Automate your workflow with
           <br className="hidden md:block" /> our integrations
         </h2>
@@ -60,7 +60,7 @@ export default function Automate() {
 
         {/* Button */}
         <div className="mt-12">
-          <button className="inline-flex items-center px-8 py-3 border-2 border-[#353f4f] rounded-md text-base font-semibold text-[#353f4f] hover:bg-[#f74780] hover:border-[#f74780] hover:text-white transition-colors duration-300">
+          <button className="inline-flex items-center px-8 py-3 border-2 border-martex-dark_text rounded-md text-base font-semibold text-martex-dark_text hover:bg-martex-light_pink hover:border-martex-light_pink hover:text-white transition-colors duration-300">
             View all integrations
           </button>
         </div>

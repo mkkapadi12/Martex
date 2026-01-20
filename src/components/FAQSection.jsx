@@ -4,10 +4,10 @@ export default function FAQSection({ get_color }) {
       <div className="mx-auto max-w-7xl">
         {/* Heading */}
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#353f4f] md:text-4xl lg:text-6xl">
+          <h2 className="text-3xl font-bold text-martex-dark_text md:text-4xl lg:text-6xl">
             Questions & Answers
           </h2>
-          <p className="mt-4 text-[#757575] text-lg md:text-2xl">
+          <p className="mt-4 text-lg text-martex-light_text md:text-2xl">
             Ligula risus auctor tempus magna feugiat lacinia.
           </p>
         </div>
@@ -17,10 +17,10 @@ export default function FAQSection({ get_color }) {
           {/* Left Column */}
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 1. Getting started with Martex
               </h3>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 Etiam amet mauris suscipit in odio integer congue metus and
                 vitae arcu mollis blandit ultrice ligula egestas magna suscipit
                 lectus magna suscipit luctus blandit and laoreet
@@ -28,10 +28,10 @@ export default function FAQSection({ get_color }) {
             </div>
 
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 2. What’s inside the package?
               </h3>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 An enim nullam tempor sapien gravida donec ipsum and enim porta
                 justo integer at velna vitae auctor integer congue undo magna
                 laoreet augue pretium purus pretium ligula
@@ -39,10 +39,10 @@ export default function FAQSection({ get_color }) {
             </div>
 
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 3. How do I choose a plan?
               </h3>
-              <ul className="mt-3 space-y-2 text-[#757575] text-lg list-disc list-inside">
+              <ul className="mt-3 space-y-2 text-lg list-disc list-inside text-martex-light_text">
                 <li>
                   Fringilla risus, luctus mauris orci auctor purus ligula
                   euismod pretium purus pretium rutrum tempor sapien
@@ -58,24 +58,24 @@ export default function FAQSection({ get_color }) {
           {/* Right Column */}
           <div className="space-y-12">
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 4. How does Martex handle my privacy?
               </h3>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 Quaerat sodales sapien euismod blandit purus a purus ipsum
                 primis in cubilia laoreet augue luctus dolor luctus
               </p>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 An enim nullam tempor sapien gravida donec congue metus. Vitae
                 arcu mollis blandit integer nemo volute velna
               </p>
             </div>
 
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 5. I have an issue with my account
               </h3>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 Cubilia laoreet augue egestas and luctus donec curabite diam
                 vitae dapibus libero and quisque gravida donec neque blandit
                 justo aliquam molestie nunc sapien justo
@@ -83,10 +83,10 @@ export default function FAQSection({ get_color }) {
             </div>
 
             <div>
-              <h3 className="text-2xl mb-4 font-bold text-[#353f4f]">
+              <h3 className="mb-4 text-2xl font-bold text-martex-dark_text">
                 6. Can I cancel at anytime?
               </h3>
-              <p className="mt-3 leading-relaxed text-[#757575] text-lg">
+              <p className="mt-3 text-lg leading-relaxed text-martex-light_text">
                 An enim nullam tempor sapien gravida donec ipsum and enim porta
                 justo integer at velna vitae auctor integer congue undo magna
                 laoreet augue pretium purus pretium ligula
@@ -97,12 +97,12 @@ export default function FAQSection({ get_color }) {
         {/* Get in Touch Btn */}
         <div className="flex items-center w-full gap-2 my-10">
           <div className="flex rounded-full gap-1 mx-auto text-center bg-[#f4f4f9] px-10 py-4">
-            <span className="text-base md:text-2xl text-[#6c757d]">
+            <span className="text-base md:text-2xl text-martex-light_text">
               Have any questions?
             </span>
             <div>
               <button
-                className={`text-base md:text-2xl ${get_color} underline font-bold hover:text-[#353f4f] transition-all duration-300`}
+                className={`text-base md:text-2xl ${get_color} underline font-bold hover:text-martex-dark_text transition-all duration-300`}
               >
                 Get in Touch
               </button>

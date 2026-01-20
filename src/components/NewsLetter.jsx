@@ -7,7 +7,7 @@ const NewsLetter = () => {
         <div className="mb-16 border-t border-gray-200" />
 
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <h2 className="max-w-xl md:text-3xl text-center sm:text-start text-2xl font-semibold text-[#353f4f] xl:text-[38px] !leading-normal">
+          <h2 className="max-w-xl md:text-3xl text-center sm:text-start text-2xl font-semibold text-martex-dark_text xl:text-[38px] !leading-normal">
             Stay up to date with our news,
             <br className="hidden sm:block" />
             ideas and updates

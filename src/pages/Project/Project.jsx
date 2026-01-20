@@ -51,10 +51,10 @@ const Project = () => {
     logo: logoblue,
     logoscroll: logoblue,
     bg: "bg-white",
-    link_color: "text-[#353f4f]",
+    link_color: "text-martex-dark_text",
     btn_color: "bg-[#1680fb]",
     btn_text: "Get Started",
-    text: "text-[#353f4f]",
+    text: "text-martex-dark_text",
   };
 
   const cta_data = {
@@ -71,10 +71,10 @@ const Project = () => {
         {/* Header Title Section */}
         <section className="container pt-[160px] sm:pt-[150px] xl:pt-[180px] mx-auto ">
           <div className="text-center">
-            <h1 className="text-[#353f4f] md:text-5xl sm:px-0 px-12 text-3xl xl:text-6xl font-semibold">
+            <h1 className="text-martex-dark_text md:text-5xl sm:px-0 px-12 text-3xl xl:text-6xl font-semibold">
               Great Design That Works!
             </h1>
-            <p className="text-[#6c757d] mt-6 text-lg md:text-xl xl:text-2xl px-10 sm:px-4">
+            <p className="text-martex-light_text mt-6 text-lg md:text-xl xl:text-2xl px-10 sm:px-4">
               Ligula risus auctor tempus magna feugiat lacinia.
             </p>
           </div>
@@ -88,7 +88,7 @@ const Project = () => {
                   key={item.id}
                   className="relative space-y-4 overflow-hidden group"
                 >
-                  <h1 className="md:text-2xl text-xl xl:text-3xl text-[#353f4f] font-semibold">
+                  <h1 className="md:text-2xl text-xl xl:text-3xl text-martex-dark_text font-semibold">
                     {item.title}
                   </h1>
 
@@ -102,7 +102,7 @@ const Project = () => {
                   {/* Eye Icon */}
                   <div className="absolute inset-0 top-8 rounded-[16px] flex items-end justify-center transition-all duration-500 group-hover:items-center group-hover:bg-[#14141440]">
                     <div className="transition-all duration-700 translate-y-8 rounded-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
-                      <Eye className="text-white" size={35}/>
+                      <Eye className="text-white" size={35} />
                     </div>
                   </div>
                 </div>

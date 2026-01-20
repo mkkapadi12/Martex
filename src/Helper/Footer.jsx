@@ -41,13 +41,13 @@ export default function Footer() {
         <div className="my-10 border-t border-gray-200" />
 
         {/* Links */}
-        <div className="flex flex-wrap justify-center text-base xl:text-lg font-medium text-[#6c757d] gap-x-8 gap-y-4">
+        <div className="flex flex-wrap justify-center text-base xl:text-lg font-medium text-martex-light_text gap-x-8 gap-y-4">
           {links.map((link, index) => {
             return (
               <Link
                 key={index}
                 to={link.url}
-                className="transition-all duration-300 hover:text-[#353f4f]"
+                className="transition-all duration-300 hover:text-martex-dark_text"
               >
                 {link.name}
               </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
               <a
                 key={index}
                 href={social.url}
-                className="transition-all duration-300 hover:text-[#353f4f]"
+                className="transition-all duration-300 hover:text-martex-dark_text"
                 aria-label={social.name}
               >
                 {social.icon}

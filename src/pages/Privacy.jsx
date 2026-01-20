@@ -6,19 +6,19 @@ export default function Privacy() {
       <div className="container max-w-[1080px] mx-auto pt-[160px] xl:pt-[180px] pb-14 xl:pb-20 px-4 sm:px-14 lg:px-16 xl:px-4">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#353f4f] lg:text-5xl  xl:text-6xl">
+          <h1 className="text-3xl sm:text-4xl font-bold text-martex-dark_text lg:text-5xl  xl:text-6xl">
             Privacy Policy
           </h1>
-          <p className="mt-5 text-[#6c757d] text-xl sm:text-base lg:text-xl xl:text-2xl">
+          <p className="mt-5 text-martex-light_text text-xl sm:text-base lg:text-xl xl:text-2xl">
             This policy is effective as of 11th November 2022
           </p>
         </div>
 
         {/* Content */}
-        <div className="space-y-16 leading-relaxed text-[#6c757d]">
+        <div className="space-y-16 leading-relaxed text-martex-light_text">
           {/* 1 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               1. Introduction
             </h2>
             <p className="">
@@ -45,11 +45,11 @@ export default function Privacy() {
 
           {/* 2 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               2. Personal Information We Collect
             </h2>
             <div className="mt-8">
-              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-[#353f4f] font-bold">
+              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-martex-dark_text font-bold">
                 2.1. Information you provide to us
               </h2>
               <p className="mt-5">
@@ -84,7 +84,7 @@ export default function Privacy() {
               </li>
             </ul>
             <div className="mt-8">
-              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-[#353f4f] font-bold">
+              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-martex-dark_text font-bold">
                 2.2. Automatic data collection
               </h2>
               <p className="mt-5">
@@ -105,7 +105,7 @@ export default function Privacy() {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-[#353f4f] font-bold">
+              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-martex-dark_text font-bold">
                 2.3. User comments and contents
               </h2>
               <p className="mt-5">
@@ -130,7 +130,7 @@ export default function Privacy() {
               </li>
             </ul>
             <div className="mt-8">
-              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-[#353f4f] font-bold">
+              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-martex-dark_text font-bold">
                 2.4. Information from other sources
               </h2>
               <p className="mt-5">
@@ -149,7 +149,7 @@ export default function Privacy() {
 
           {/* 3 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               3. Types of Information
             </h2>
             <p className="mt-5">
@@ -179,7 +179,7 @@ export default function Privacy() {
 
           {/* 4 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-4 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-4 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               4. How We Use Personal Information
             </h2>
             <p className="mt-5">
@@ -199,7 +199,7 @@ export default function Privacy() {
               fusce cursus neque aliquam fusce blandit
             </p>
             <div className="mt-8">
-              <h2 className="lg:text-3xl text-xl text-[#353f4f] font-bold">
+              <h2 className="lg:text-3xl text-xl text-martex-dark_text font-bold">
                 4.1. In mails and contact forms
               </h2>
               <p className="mt-5">
@@ -214,7 +214,7 @@ export default function Privacy() {
 
           {/* 5 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               5. Price and Taxes
             </h2>
             <ul className="mb-4 ml-5 space-y-4 list-disc">
@@ -241,7 +241,7 @@ export default function Privacy() {
 
           {/* 6 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               6. Data Shared with Third Parties
             </h2>
             <p className="">
@@ -257,7 +257,7 @@ export default function Privacy() {
               ligula ipsum primis cubilia donec and augue luctus congue
             </p>
             <div className="mt-8">
-              <h2 className="lg:text-3xl text-xl text-[#353f4f] font-bold">
+              <h2 className="lg:text-3xl text-xl text-martex-dark_text font-bold">
                 6.1. Refunds
               </h2>
               <p className="mt-5">
@@ -277,7 +277,7 @@ export default function Privacy() {
 
           {/* 7 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               7. Security
             </h2>
             <p className="">
@@ -297,7 +297,7 @@ export default function Privacy() {
 
           {/* 8 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl  font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl  font-bold text-martex-dark_text">
               8. Changes in the Privacy Policy
             </h2>
             <p className="">
@@ -320,7 +320,7 @@ export default function Privacy() {
 
           {/* 9 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               9. How to Contact Us
             </h2>
             <p className="mt-5">
@@ -328,7 +328,7 @@ export default function Privacy() {
               Service, do not hesitate to contact us at
             </p>
             <a href="mailto:yourdomain.com" className="inline-block mt-3">
-              <span className="mt-3 text-base xl:text-lg text-[#1680fb] underline font-semibold  hover:text-[#353f4f] transition-all duration-300">
+              <span className="mt-3 text-base xl:text-lg text-[#1680fb] underline font-semibold  hover:text-martex-dark_text transition-all duration-300">
                 hello@yourdomain.com
               </span>
             </a>

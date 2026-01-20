@@ -1,7 +1,6 @@
 import React from "react";
 import { BarChart3, Target, TrendingUp, Zap } from "lucide-react";
 
-
 const features = [
   {
     icon: Target,
@@ -29,10 +28,10 @@ export default function Features() {
   return (
     <section className="py-16">
       <div className="mb-10 text-center">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl md:text-[46px] font-semibold text-[#353f4f] mb-4">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl md:text-[46px] font-semibold text-martex-dark_text mb-4">
           Build a customer-centric <br /> marketing strategy
         </h2>
-        <p className="text-[#757575] text-2xl py-6">
+        <p className="py-6 text-2xl text-martex-light_text">
           Ligula risus auctor tempus magna feugiat lacinia.
         </p>
       </div>
@@ -41,12 +40,12 @@ export default function Features() {
         {features.map((item, i) => (
           <div key={i} className="text-center">
             <div>
-              <item.icon className="w-12 h-12 mx-auto text-[#f74780] mb-4" />
+              <item.icon className="w-12 h-12 mx-auto mb-4 text-martex-light_pink" />
             </div>
-            <h3 className="text-2xl font-semibold text-[#353f4f] mt-4">
+            <h3 className="mt-4 text-2xl font-semibold text-martex-dark_text">
               {item.title}
             </h3>
-            <p className="text-[#757575]">{item.description}</p>
+            <p className="text-martex-light_text">{item.description}</p>
           </div>
         ))}
       </div>

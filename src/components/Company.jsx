@@ -16,7 +16,7 @@ const Company = ({ title }) => {
 
   return (
     <section className="container py-10 mx-auto md:py-20">
-      <div className="py-5 text-xl sm:text-2xl text-center font-semibold text-[#353f4f]">
+      <div className="py-5 text-xl sm:text-2xl text-center font-semibold text-martex-dark_text">
         <h1>{title}</h1>
       </div>
       <Carousel

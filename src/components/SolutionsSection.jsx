@@ -10,9 +10,9 @@ const SolutionCard = ({ image, title, description }) => {
         <img src={image} alt={title} className="max-w-[220px] w-full" />
       </div>
 
-      <h3 className="text-xl font-bold text-[#353f4f] mb-3">{title}</h3>
+      <h3 className="text-xl font-bold text-martex-dark_text mb-3">{title}</h3>
 
-      <p className="text-[#6c757d] leading-relaxed">{description}</p>
+      <p className="text-martex-light_text leading-relaxed">{description}</p>
     </div>
   );
 };
@@ -21,10 +21,10 @@ export default function SolutionsSection() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-3xl px-6 mx-auto mb-16 text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#353f4f] mb-4">
+        <h2 className="text-4xl sm:text-5xl font-bold text-martex-dark_text mb-4">
           The Complete Solutions
         </h2>
-        <p className="text-lg text-[#6c757d]">
+        <p className="text-lg text-martex-light_text">
           Ligula risus auctor tempus magna feugiat lacinia.
         </p>
       </div>

@@ -36,7 +36,7 @@ export default function Navbar({ data }) {
         {/* Desktop Menu */}
         <div
           className={`hidden lg:flex gap-x-10 transition-all duration-300 ${
-            scrolled ? "text-[#353f4f ]" : `${link_color}`
+            scrolled ? "text-martex-dark_text" : `${link_color}`
           }`}
         >
           {pricingNav.map((item, index) => (
@@ -51,14 +51,14 @@ export default function Navbar({ data }) {
           <Link
             to="/login"
             className={`font-semibold text-lg ${
-              scrolled ? "text-[#353f4f]" : `${text}`
+              scrolled ? "text-martex-dark_text" : `${text}`
             }`}
           >
             Sign in
           </Link>
           <Link to="/signup">
             <button
-              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-[#0f6ae2] transition-all duration-300`}
+              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-transparent hover:border-white border-2 border-martex-light_pink transition-all duration-300`}
             >
               {btn_text}
             </button>
@@ -67,7 +67,7 @@ export default function Navbar({ data }) {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-2xl text-[#6c757d] lg:hidden"
+          className="text-2xl text-martex-light_text lg:hidden"
           onClick={() => setOpen(true)}
         >
           ☰
@@ -91,12 +91,12 @@ export default function Navbar({ data }) {
         {/* Close */}
         <div className="flex items-center p-5 border-b">
           <button onClick={() => setOpen(false)}>
-            <X size={26} className="text-gray-500" />
+            <X size={26} className="text-martex-light_text" />
           </button>
         </div>
 
         {/* Menu Items */}
-        <div className="flex flex-col font-medium text-gray-700 divide-y">
+        <div className="flex flex-col font-medium divide-y text-martex-dark_text">
           <div className="flex items-center justify-between p-5">
             <span>About</span>
             <ChevronDown size={18} />

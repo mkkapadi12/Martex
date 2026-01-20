@@ -26,12 +26,12 @@ export default function Home() {
     logoscroll: logopink,
     // bg: "bg-[#8a4be0]",
     link_color: "text-[#fff]",
-    btn_color: "bg-[#f74780]",
+    btn_color: "bg-martex-light_pink",
     btn_text: "Sign up",
     text: "text-white",
   };
   const cta_data = {
-    btn_color: "bg-[#f74780]",
+    btn_color: "bg-martex-light_pink",
     btn_text: "Get started – it's free",
     title: `Starting with Martex is easy, fast and free`,
     bg: bg,
@@ -53,9 +53,9 @@ export default function Home() {
       <Discover />
       <Testimonials />
       <Automate />
-      <FAQSection get_color={"text-[#f74780]"} />
+      <FAQSection get_color={"text-martex-light_pink"} />
       <CTASection cta_data={cta_data} />
-      <Footer logo={logopink}/>
+      <Footer logo={logopink} />
     </>
   );
 }

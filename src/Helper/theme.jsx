@@ -7,8 +7,8 @@ export const martex = {
   dark_text: "#353f4f",
 
   // Blue Button theme
-  light_blue_btn: "#1680fb",
-  dark_blue_btn: "#185abd",
+  light_blue: "#1680fb",
+  dark_blue: "#185abd",
 
   // Pink Button theme
   light_pink: "#f74780",

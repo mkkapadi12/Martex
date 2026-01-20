@@ -30,10 +30,12 @@ const Testimonials = () => {
     <section className="container px-4 py-12 mx-auto">
       <div className="pb-10 sm:pb-16">
         <div className="max-w-4xl py-10 mx-auto ">
-          <h1 className="text-3xl font-bold text-center sm:text-4xl lg:text-6xl text-[#353f4f]">
+          <h1 className="text-3xl font-bold text-center sm:text-4xl lg:text-6xl text-martex-dark_text">
             Here’s what our amazing clients are saying
           </h1>
-          <p className="pt-10 text-lg text-center text-gray-600 sm:text-2xl">Ligula risus auctor tempus magna feugiat lacinia.</p>
+          <p className="pt-10 text-lg text-center text-gray-600 sm:text-2xl">
+            Ligula risus auctor tempus magna feugiat lacinia.
+          </p>
         </div>
         <Carousel
           opts={{
@@ -79,7 +81,7 @@ const Testimonials = () => {
           <CarouselNext className="hidden md:block" />
         </Carousel>
       </div>
-      <div className="mx-auto text-xl text-center max-w-7xl text-[#6c757d]">
+      <div className="mx-auto text-xl text-center max-w-7xl text-martex-light_text">
         <h1>Our clients love us as much as we love them</h1>
         <div className="flex flex-wrap items-start justify-center gap-10 mt-2">
           {brands.map((brand, index) => (

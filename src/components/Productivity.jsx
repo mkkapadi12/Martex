@@ -16,7 +16,7 @@ const Productivity = () => {
             <span className="block mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase">
               One-stop solution
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#353f4f] leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-martex-dark_text leading-tight mb-6">
               Achieve more with better workflows
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-gray-600">

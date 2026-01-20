@@ -11,7 +11,7 @@ const SmarterWayToWork = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#353f4f] mb-6">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-martex-dark_text mb-6">
               The smarter way to work
             </h2>
 
@@ -21,7 +21,7 @@ const SmarterWayToWork = () => {
               cursus purus vitae purus an ipsum suscipit
             </p>
 
-            <h3 className="text-2xl font-bold text-[#353f4f] mb-6">
+            <h3 className="text-2xl font-bold text-martex-dark_text mb-6">
               Full access to all features
             </h3>
 
@@ -43,7 +43,7 @@ const SmarterWayToWork = () => {
               </li>
             </ul>
 
-            <button className="inline-flex items-center px-8 py-3 border-2 border-[#f74780] rounded-md text-base font-semibold text-[#f74780] hover:bg-[#f74780] hover:text-white transition-colors duration-300">
+            <button className="inline-flex items-center px-8 py-3 border-2 border-martex-light_pink rounded-md text-base font-semibold text-martex-light_pink hover:bg-martex-light_pink hover:text-white transition-colors duration-300">
               What's possible?
             </button>
           </div>

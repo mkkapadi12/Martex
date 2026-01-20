@@ -6,19 +6,19 @@ export default function TermsOfService() {
       <div className="container max-w-[1080px] mx-auto pt-[160px] xl:pt-[180px] pb-14 xl:pb-20 px-4 sm:px-14 lg:px-16 xl:px-4">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#353f4f] lg:text-5xl  xl:text-6xl">
+          <h1 className="text-3xl sm:text-4xl font-bold text-martex-dark_text lg:text-5xl  xl:text-6xl">
             Terms of Service
           </h1>
-          <p className="mt-5 text-[#6c757d] text-xl sm:text-base lg:text-xl xl:text-2xl">
+          <p className="mt-5 text-martex-light_text text-xl sm:text-base lg:text-xl xl:text-2xl">
             This policy is effective as of 23th October 2022
           </p>
         </div>
 
         {/* Content */}
-        <div className="space-y-16 leading-relaxed text-[#6c757d]">
+        <div className="space-y-16 leading-relaxed text-martex-light_text">
           {/* 1 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               1. Ownership
             </h2>
             <p className="">
@@ -42,7 +42,7 @@ export default function TermsOfService() {
 
           {/* 2 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               2. Acceptance of Terms
             </h2>
             <p className="">
@@ -71,7 +71,7 @@ export default function TermsOfService() {
 
           {/* 3 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-7 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               3. Service Description
             </h2>
             <p className="">
@@ -93,7 +93,7 @@ export default function TermsOfService() {
               </li>
             </ul>
             <div className="mt-8">
-              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-[#353f4f] font-bold">
+              <h2 className="xl:lg:text-3xl text-xl lg:text-2xl text-martex-dark_text font-bold">
                 3.1. Subscription
               </h2>
               <p className="mt-5">
@@ -113,7 +113,7 @@ export default function TermsOfService() {
 
           {/* 4 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-4 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-4 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               4. Account Information
             </h2>
             <p className="">
@@ -128,7 +128,7 @@ export default function TermsOfService() {
               lorem.
             </p>
             <div className="mt-8">
-              <h2 className="lg:text-3xl text-xl text-[#353f4f] font-bold">
+              <h2 className="lg:text-3xl text-xl text-martex-dark_text font-bold">
                 4.1. Registering for an account
               </h2>
               <p className="mt-5">
@@ -149,7 +149,7 @@ export default function TermsOfService() {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="lg:text-3xl text-xl text-[#353f4f] font-bold">
+              <h2 className="lg:text-3xl text-xl text-martex-dark_text font-bold">
                 4.2. Your responsibility for your account
               </h2>
               <p className="mt-5">
@@ -164,7 +164,7 @@ export default function TermsOfService() {
 
           {/* 5 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               5. Price and Taxes
             </h2>
             <ul className="mb-4 ml-5 space-y-4 list-disc">
@@ -191,7 +191,7 @@ export default function TermsOfService() {
 
           {/* 6 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               6. Method of Payment
             </h2>
             <p className="">
@@ -207,7 +207,7 @@ export default function TermsOfService() {
               ligula ipsum primis cubilia donec and augue luctus congue
             </p>
             <div className="mt-8">
-              <h2 className="lg:text-3xl text-xl text-[#353f4f] font-bold">
+              <h2 className="lg:text-3xl text-xl text-martex-dark_text font-bold">
                 6.1. Refunds
               </h2>
               <p className="mt-5">
@@ -227,7 +227,7 @@ export default function TermsOfService() {
 
           {/* 7 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               7. Security
             </h2>
             <p className="">
@@ -247,7 +247,7 @@ export default function TermsOfService() {
 
           {/* 8 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl  font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl  font-bold text-martex-dark_text">
               8. Changes to This Terms of ServiceLimitation of Liability
             </h2>
             <p className="">
@@ -270,7 +270,7 @@ export default function TermsOfService() {
 
           {/* 9 */}
           <div className="text-[17px] md:text-[14px] xl:text-xl">
-            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-[#353f4f]">
+            <h2 className="mb-6 xl:text-4xl lg:text-3xl text-2xl font-bold text-martex-dark_text">
               9. How to Contact Us
             </h2>
             <p className="mt-5">
@@ -278,7 +278,7 @@ export default function TermsOfService() {
               Service, do not hesitate to contact us at
             </p>
             <a href="mailto:yourdomain.com" className="inline-block mt-3">
-              <span className="mt-3 text-base xl:text-lg text-[#1680fb] underline font-semibold  hover:text-[#353f4f] transition-all duration-300">
+              <span className="mt-3 text-base xl:text-lg text-[#1680fb] underline font-semibold  hover:text-martex-dark_text transition-all duration-300">
                 hello@yourdomain.com
               </span>
             </a>

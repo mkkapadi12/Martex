@@ -13,10 +13,10 @@ const NotFound = () => {
               <div className="relative z-10 flex justify-center w-[80%] mx-auto mb-9 xl:mb-12 xl:w-full">
                 <img src={error} alt="not found" />
               </div>
-              <h1 className="font-semibold text-center text-3xl md:text-5xl xl:text-6xl text-[#353f4f] mb-4 md:mb-8 xl:mb-10">
+              <h1 className="font-semibold text-center text-3xl md:text-5xl xl:text-6xl text-martex-dark_text mb-4 md:mb-8 xl:mb-10">
                 Page Not Found
               </h1>
-              <p className="text-[#757575] text-xl xl:text-2xl font-medium md:max-w-lg xl:max-w-xl md:text-xl mx-auto text-center mb-10">
+              <p className="text-martex-light_text text-xl xl:text-2xl font-medium md:max-w-lg xl:max-w-xl md:text-xl mx-auto text-center mb-10">
                 Oops! The page you are looking for might have been moved,
                 renamed or might never existed
               </p>

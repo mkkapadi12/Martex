@@ -149,7 +149,7 @@ const SmartSolutionsSection = () => {
             <span className="block mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase">
               One-stop solution
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#353f4f] leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-martex-dark_text leading-tight mb-6">
               Smart solutions, <br className="hidden sm:block" />
               real-time results
             </h2>
@@ -194,7 +194,7 @@ const SmartSolutionsSection = () => {
               Easy Integration
             </h2>
 
-            <h1 className="text-4xl md:text-5xl font-semibold text-[#353f4f] mb-6">
+            <h1 className="text-4xl md:text-5xl font-semibold text-martex-dark_text mb-6">
               Plug your essential tools in few clicks
             </h1>
 

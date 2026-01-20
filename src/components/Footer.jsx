@@ -25,10 +25,10 @@ export default function Footer({ logo }) {
 
           {/* Company */}
           <div>
-            <h4 className="mb-4 font-semibold text-[#353f4f] text-xl">
+            <h4 className="mb-4 text-xl font-semibold text-martex-dark_text">
               Company
             </h4>
-            <ul className="space-y-3 text-gray-500">
+            <ul className="space-y-3 text-martex-light_text">
               <li>About Us</li>
               <li>Our Blog</li>
               <li>Customers</li>
@@ -38,10 +38,10 @@ export default function Footer({ logo }) {
 
           {/* Product */}
           <div>
-            <h4 className="mb-4 font-semibold text-[#353f4f] text-xl">
+            <h4 className="mb-4 text-xl font-semibold text-martex-dark_text">
               Product
             </h4>
-            <ul className="space-y-3 text-gray-500">
+            <ul className="space-y-3 text-martex-light_text">
               <li>Integration</li>
               <li>What's New</li>
               <li>Pricing</li>
@@ -51,8 +51,10 @@ export default function Footer({ logo }) {
 
           {/* Legal */}
           <div>
-            <h4 className="mb-4 font-semibold text-[#353f4f] text-xl">Legal</h4>
-            <ul className="space-y-3 text-gray-500">
+            <h4 className="mb-4 text-xl font-semibold text-martex-dark_text">
+              Legal
+            </h4>
+            <ul className="space-y-3 text-martex-light_text">
               <li>Terms of Use</li>
               <li>Privacy Policy</li>
               <li>Cookie Policy</li>
@@ -62,14 +64,14 @@ export default function Footer({ logo }) {
 
           {/* Newsletter */}
           <div className="col-span-2 md:col-span-1">
-            <h4 className="mb-4 font-semibold text-[#353f4f] text-xl">
+            <h4 className="mb-4 text-xl font-semibold text-martex-dark_text">
               Follow the Best
             </h4>
             <div className="relative">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full px-4 py-3 pr-12 text-gray-700 bg-gray-100 rounded-lg outline-none"
+                className="w-full px-4 py-3 pr-12 bg-gray-100 rounded-lg outline-none text-martex-dark_text"
               />
               <button className="absolute text-pink-500 -translate-y-1/2 right-3 top-1/2">
                 <ArrowRight size={18} />
@@ -81,12 +83,12 @@ export default function Footer({ logo }) {
         {/* Divider */}
         <div className="flex flex-col items-center justify-between gap-6 pt-6 mt-16 border-t border-gray-200 md:flex-row">
           {/* Copyright */}
-          <p className="text-lg text-gray-500 text-">
+          <p className="text-lg text-martex-light_text">
             © 2025 Martex. All Rights Reserved
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-5 text-gray-400">
+          <div className="flex items-center gap-5 text-martex-light_text hover:text-martex-dark_text">
             <Facebook size={24} />
             <Twitter size={24} />
             <Instagram size={24} />

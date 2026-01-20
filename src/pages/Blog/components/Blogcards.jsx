@@ -21,13 +21,13 @@ const Blogcards = ({ blogPosts }) => {
                 >
                   {post.category}
                 </span>
-                <h3 className="mt-2 text-lg sm:text-xl xl:text-[22px] font-semibold text-[#353f4f]">
+                <h3 className="mt-2 text-lg sm:text-xl xl:text-[22px] font-semibold text-martex-dark_text">
                   {post.title}
                 </h3>
-                <p className="mt-2 text-base sm:text-base/7 xl:text-lg/8 text-[#6c757d]">
+                <p className="mt-2 text-base sm:text-base/7 xl:text-lg/8 text-martex-light_text">
                   {post.description}
                 </p>
-                <p className="mt-4 text-base xl:text-lg  text-[#353f4f]">
+                <p className="mt-4 text-base xl:text-lg  text-martex-dark_text">
                   <span className="font-semibold">By {post.author}</span> |{" "}
                   {post.date}
                 </p>

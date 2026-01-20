@@ -54,7 +54,10 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className="flex flex-col items-center gap-5 sm:flex-row sm: jusitify-center sm:items-start sm:justify-start">
+              <div
+                key={index}
+                className="flex flex-col items-center gap-5 sm:flex-row sm: jusitify-center sm:items-start sm:justify-start"
+              >
                 {/* Icon */}
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-50">
@@ -64,10 +67,10 @@ const Services = () => {
 
                 {/* Content */}
                 <div className="text-center sm:text-start">
-                  <h3 className="text-lg md:text-xl xl:text-2xl font-semibold text-[#353f4f] mb-2">
+                  <h3 className="text-lg md:text-xl xl:text-2xl font-semibold text-martex-dark_text mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-[#6c757d] text-base/7 xl:text-lg/8">
+                  <p className="text-martex-light_text text-base/7 xl:text-lg/8">
                     {service.description}
                   </p>
                 </div>

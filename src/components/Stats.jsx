@@ -10,10 +10,12 @@ export default function Stats() {
       <div className="flex flex-col justify-center px-6 mx-auto sm:justify-between max-w-7xl md:flex-row">
         {stats.map((s, i) => (
           <div key={i} className="flex items-center justify-center mb-8">
-            <h3 className="text-4xl sm:text-6xl font-semibold text-[#353f4f]">
+            <h3 className="text-4xl sm:text-6xl font-semibold text-martex-dark_text">
               {s.value}
             </h3>
-            <p className="text-[#757575] text-lg sm:text-xl px-6">{s.text}</p>
+            <p className="text-martex-light_text text-lg sm:text-xl px-6">
+              {s.text}
+            </p>
           </div>
         ))}
       </div>

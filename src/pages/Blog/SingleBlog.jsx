@@ -15,7 +15,6 @@ import { Button } from "../../components/ui/button";
 import Blogcards from "./components/Blogcards";
 import Footer from "../../components/Footer";
 
-
 const commentData = [
   {
     id: 1,
@@ -93,10 +92,10 @@ const SingleBlog = () => {
     logoscroll:
       "https://martex-tailwindcss.ibthemespro.com/images/logo-blog.png",
     bg: "bg-white",
-    link_color: "text-[#353f4f]",
+    link_color: "text-martex-dark_text",
     btn_color: "bg-[#1680fb]",
     btn_text: "Get Started",
-    text: "text-[#353f4f]",
+    text: "text-martex-dark_text",
   };
 
   return (
@@ -106,10 +105,10 @@ const SingleBlog = () => {
         <section className="xl:pt-[180px] lg:max-xl:pt-[160px] container mx-auto pt-[80px] mt-[80px] sm:mt-[40px]">
           <div className="px-10 text-center sm:mb-10 sm:px-0">
             <h4 className="mb-6 uppercase text-[#0fbc49]">Community</h4>
-            <h2 className="text-[#353f4f] xl:text-[55px] mb-7 md:text-[45px] sm:text-3xl text-[27px] font-semibold lg:max-w-3xl xl:max-w-5xl mx-auto !leading-tight">
+            <h2 className="text-martex-dark_text xl:text-[55px] mb-7 md:text-[45px] sm:text-3xl text-[27px] font-semibold lg:max-w-3xl xl:max-w-5xl mx-auto !leading-tight">
               Maecenas congue augue sagittis egestas integer velna purus
             </h2>
-            <p className="sm:text-xl text-[#353f4f] font-semibold">
+            <p className="sm:text-xl text-martex-dark_text font-semibold">
               By Melissa McClone |
               <span className="font-medium">
                 <br className="block sm:hidden" /> April 29, 2023
@@ -124,7 +123,7 @@ const SingleBlog = () => {
                 className="rounded-[16px] overflow-hidden"
               />
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
               <p>
                 Sagittis congue augue egestas integer velna purus purus magna
                 nec suscipit and egestas magna aliquam ipsum vitae purus justo
@@ -149,8 +148,8 @@ const SingleBlog = () => {
                 tortor sagittis lacinia molestie diam egestas
               </p>
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
-              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-[#353f4f] text-xl">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-martex-dark_text text-xl">
                 1. Lorem egestas a dolor fusce posuere
               </h1>
               <p className="">
@@ -179,7 +178,7 @@ const SingleBlog = () => {
                   Quaerat sodales sapien undo{" "}
                   <a
                     href=""
-                    className="text-[#1680fb] font-semibold hover:text-[#353f4f] transition-all duration-300 underline"
+                    className="text-[#1680fb] font-semibold hover:text-martex-dark_text transition-all duration-300 underline"
                   >
                     {" "}
                     create an API Key{" "}
@@ -199,8 +198,8 @@ const SingleBlog = () => {
                 tortor sagittis lacinia molestie diam egestas
               </p>
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
-              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-[#353f4f] text-xl">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-martex-dark_text text-xl">
                 Lorem egestas a dolor @luctus donec/porta curabitur diam
               </h1>
               <p>
@@ -246,7 +245,7 @@ const SingleBlog = () => {
                 className="rounded-[16px] overflow-hidden"
               />
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
               <h2 className="!font-[100] sm:text-xl xl:text-3xl !leading-[1.45]">
                 "Nulla tincidunt volutpat lectus purus diam ipsum primis felis a
                 congue tempor gravida habitant morbi and tristique senectus
@@ -273,8 +272,8 @@ const SingleBlog = () => {
                 eget molestie sagittis at quaerat sodales
               </p>
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
-              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-[#353f4f] text-xl">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-martex-dark_text text-xl">
                 2. Volutpat egestas and magna suscipit
               </h1>
               <p>
@@ -322,7 +321,7 @@ const SingleBlog = () => {
                 undo quisque fusce cursus neque aliquam fusce blandit
               </p>
 
-              <h1 className="xl:text-[28px] sm:text-2xl font-semibold text-[#353f4f] sm:py-4 text-xl">
+              <h1 className="xl:text-[28px] sm:text-2xl font-semibold text-martex-dark_text sm:py-4 text-xl">
                 Primis and augue "ligula" efficitur (viverra bibendum aliquet
                 dapibus aliquet dictum tempor diam as an example).
               </h1>
@@ -368,8 +367,8 @@ const SingleBlog = () => {
                 sagittis lacinia molestie diam egestas
               </p>
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
-              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-[#353f4f] text-xl">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-martex-dark_text text-xl">
                 Vitae massa placerat undo purus?
               </h1>
               <p>
@@ -426,8 +425,8 @@ const SingleBlog = () => {
                 ligula massa lorem.
               </p>
             </div>
-            <div className="sm:py-3 py-5 xl:py-6 text-[#6c757d] space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
-              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-[#353f4f] text-xl">
+            <div className="sm:py-3 py-5 xl:py-6 text-martex-light_text space-y-5 xl:text-lg/8 sm:text-base/7 xl:px-0 sm:px-10">
+              <h1 className="xl:text-3xl sm:text-2xl font-semibold text-martex-dark_text text-xl">
                 3. Egestas volute turpis dolores
               </h1>
               <p>
@@ -449,15 +448,15 @@ const SingleBlog = () => {
               <div className="py-6">
                 <div className="flex items-center justify-start gap-4 transition-all ">
                   <TwitterIcon
-                    className="hover:text-[#353f4f] cursor-pointer duration-300"
+                    className="hover:text-martex-dark_text cursor-pointer duration-300"
                     size={24}
                   />
                   <FacebookIcon
-                    className="hover:text-[#353f4f] cursor-pointer duration-300"
+                    className="hover:text-martex-dark_text cursor-pointer duration-300"
                     size={24}
                   />
                   <SaveIcon
-                    className="hover:text-[#353f4f] cursor-pointer duration-300"
+                    className="hover:text-martex-dark_text cursor-pointer duration-300"
                     size={24}
                   />
                 </div>
@@ -474,10 +473,10 @@ const SingleBlog = () => {
                   />
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-3xl font-semibold text-[#353f4f]">
+                  <h3 className="text-3xl font-semibold text-martex-dark_text">
                     Melissa McClone
                   </h3>
-                  <p className="font-medium text-xl/7 text-[#6c757d]">
+                  <p className="font-medium text-xl/7 text-martex-light_text">
                     Lorem ipsum dolor sit amet, consectetur elit eiusmod tempor
                     sapien dolore and incidide labore dolore labore incididunt
                     turpis vitae raesent a varius dolor sagittis luctus placerat
@@ -487,13 +486,13 @@ const SingleBlog = () => {
               </div>
               {/* Follow btn */}
               <div className="absolute right-5 top-12">
-                <button className="!border !border-[#6c757d] !bg-none px-4 py-[3px] text-[#353f4f] rounded">
+                <button className="!border !border-martex-light_text !bg-none px-4 py-[3px] text-martex-dark_text rounded">
                   Follow
                 </button>
               </div>
             </div>
             <div className="relative py-5 sm:py-[40px] lg:py-[80px] xl:py-[100px] xl:px-0 sm:px-10 space-y-5">
-              <h1 className="text-xl sm:text-2xl xl:text-3xl text-[#353f4f] font-semibold mb-14">
+              <h1 className="text-xl sm:text-2xl xl:text-3xl text-martex-dark_text font-semibold mb-14">
                 4 Comments
               </h1>
               <div className="space-y-12">
@@ -513,16 +512,16 @@ const SingleBlog = () => {
                       </div>
                       <div className="space-y-4">
                         <div>
-                          <h3 className="text-[20px] font-semibold text-[#353f4f]">
+                          <h3 className="text-[20px] font-semibold text-martex-dark_text">
                             {item.name}
                           </h3>
-                          <h4 className="flex gap-2 text-[#6c757d] text-base items-center">
+                          <h4 className="flex gap-2 text-martex-light_text text-base items-center">
                             <span>{item.duration} -</span>
                             <ReplyAll className="" size={24} /> Reply
                           </h4>
                         </div>
 
-                        <p className="font-medium text-xl/7 text-[#6c757d]">
+                        <p className="font-medium text-xl/7 text-martex-light_text">
                           {item.desc}
                         </p>
                       </div>
@@ -533,10 +532,10 @@ const SingleBlog = () => {
             </div>
             <div className="py-5 xl:px-0 sm:px-10">
               <div className="mb-5">
-                <h1 className="text-xl sm:text-2xl xl:text-3xl text-[#353f4f] font-semibold mb-4">
+                <h1 className="text-xl sm:text-2xl xl:text-3xl text-martex-dark_text font-semibold mb-4">
                   Leave a Comment
                 </h1>
-                <p className="text-lg text-[#6c757d] ">
+                <p className="text-lg text-martex-light_text ">
                   Your email address will not be published. Required fields are
                   marked *
                 </p>
@@ -598,10 +597,10 @@ const SingleBlog = () => {
           <section className="px-2 py-10 sm:px-0">
             <div className="container mx-auto max-w-7xl">
               <div className="px-2 mx-auto text-center">
-                <h1 className="xl:text-6xl text-[#353f4f] font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
+                <h1 className="xl:text-6xl text-martex-dark_text font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
                   Keep Reading...
                 </h1>
-                <span className="text-[#6c757d] md:text-xl xl:text-2xl text-xl sm:text-lg">
+                <span className="text-martex-light_text md:text-xl xl:text-2xl text-xl sm:text-lg">
                   Ligula risus auctor tempus magna feugiat lacinia.
                 </span>
               </div>

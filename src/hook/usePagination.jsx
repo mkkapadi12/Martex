@@ -30,7 +30,7 @@ const UsePagination = () => {
         <PaginationItem>
           <PaginationLink
             href="#"
-            className="transition-all duration-300 hover:border !p-5 text-xl font-semibold !text-[#6c757d]"
+            className="transition-all duration-300 hover:border !p-5 text-xl font-semibold !text-martex-light_text"
           >
             2
           </PaginationLink>
@@ -38,7 +38,7 @@ const UsePagination = () => {
         <PaginationItem>
           <PaginationLink
             href="#"
-            className="transition-all duration-300 hover:border !p-5 text-xl font-semibold !text-[#6c757d]"
+            className="transition-all duration-300 hover:border !p-5 text-xl font-semibold !text-martex-light_text"
           >
             3
           </PaginationLink>

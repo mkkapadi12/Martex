@@ -15,10 +15,10 @@ const Pricing = () => {
     logo: logoblue,
     logoscroll: logoblue,
     bg: "bg-white",
-    link_color: "text-[#353f4f]",
+    link_color: "text-martex-dark_text",
     btn_color: "bg-[#1680fb]",
     btn_text: "Get Started",
-    text: "text-[#353f4f]",
+    text: "text-martex-dark_text",
   };
 
   const cta_data = {
@@ -34,10 +34,10 @@ const Pricing = () => {
       <section className="px-4 pt-20 mx-auto max-w-[1350px]">
         <div className="container mx-auto">
           <div className="pt-20 text-center">
-            <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-[#353f4f] font-bold">
+            <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-martex-dark_text font-bold">
               Simple, Flexible Pricing
             </h1>
-            <p className="text-[#6c757d] text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
+            <p className="text-martex-light_text text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
               Billed monthly
               <span>
                 <Switch className="w-12 mx-3 h-7" />
@@ -55,7 +55,7 @@ const Pricing = () => {
       <PricingComparisonTable />
       <FAQSection get_color={"text-[#1680fb]"} />
       <CTASection cta_data={cta_data} />
-      <Footer logo={logoblue}/>
+      <Footer logo={logoblue} />
     </main>
   );
 };

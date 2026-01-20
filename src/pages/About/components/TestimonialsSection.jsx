@@ -52,10 +52,10 @@ export default function TestimonialsSection({ title }) {
       <div className="container px-2 mx-auto xl:max-w-[1300px] sm:px-10 xl:px-0">
         {/* Text Title */}
         <div className="mb-12">
-          <h1 className="font-semibold sm:leading-relaxed text-center text-3xl md:text-5xl xl:text-6xl text-[#353f4f]">
+          <h1 className="font-semibold sm:leading-relaxed text-center text-3xl md:text-5xl xl:text-6xl text-martex-dark_text">
             {title}
           </h1>
-          <p className="font-medium text-[#6c757d] text-center text-xl md:text-xl xl:text-2xl mt-4">
+          <p className="font-medium text-martex-light_text text-center text-xl md:text-xl xl:text-2xl mt-4">
             Ligula risus auctor tempus magna feugiat lacinia.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function TestimonialsSection({ title }) {
               </div>
 
               {/* Text */}
-              <p className="mb-6 leading-relaxed text-[#6c757d] xl:text-xl">
+              <p className="mb-6 leading-relaxed text-martex-light_text xl:text-xl">
                 {item.text}
               </p>
 
@@ -86,17 +86,19 @@ export default function TestimonialsSection({ title }) {
                   className="object-cover w-16 h-16 rounded-full"
                 />
                 <div>
-                  <h4 className="font-semibold text-[#353f4f] text-xl">
+                  <h4 className="font-semibold text-martex-dark_text text-xl">
                     {item.name}
                   </h4>
-                  <p className="text-base text-[#6c757d]">{item.role}</p>
+                  <p className="text-base text-martex-light_text">
+                    {item.role}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="mx-auto text-xl text-center max-w-7xl text-[#6c757d] pt-20 font-medium">
+      <div className="mx-auto text-xl text-center max-w-7xl text-martex-light_text pt-20 font-medium">
         <h1 className="text-xl font-medium sm:text-2xl">
           Our clients love us as much <br className="block sm:hidden" /> as we
           love them

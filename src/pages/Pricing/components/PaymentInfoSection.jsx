@@ -31,7 +31,7 @@ export default function PaymentInfoSection() {
       <div className="grid gap-16 mx-auto max-w-7xl md:grid-cols-3">
         {/* Accepted Payments */}
         <div>
-          <h3 className="mb-6 text-xl font-semibold text-[#353f4f]">
+          <h3 className="mb-6 text-xl font-semibold text-martex-dark_text">
             Accepted Payment Methods
           </h3>
           <div className="flex flex-wrap items-center gap-2">
@@ -48,7 +48,7 @@ export default function PaymentInfoSection() {
 
         {/* Money Back Guarantee */}
         <div>
-          <h3 className="mb-4 text-xl font-semibold text-[#353f4f]">
+          <h3 className="mb-4 text-xl font-semibold text-martex-dark_text">
             Money Back Guarantee
           </h3>
           <p className="text-lg leading-relaxed text-gray-600">
@@ -59,7 +59,7 @@ export default function PaymentInfoSection() {
 
         {/* SSL Encryption */}
         <div>
-          <h3 className="mb-4 text-xl font-semibold text-[#353f4f]">
+          <h3 className="mb-4 text-xl font-semibold text-martex-dark_text">
             SSL Encrypted Payment
           </h3>
           <p className="text-lg leading-relaxed text-gray-600">

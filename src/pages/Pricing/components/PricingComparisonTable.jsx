@@ -83,10 +83,10 @@ export default function PricingComparisonTable() {
     <section className="px-4 py-16 bg-white">
       <div className="max-w-[1280px] mx-auto overflow-x-auto">
         <div className="py-4 text-center">
-          <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-[#353f4f] font-bold">
+          <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-martex-dark_text font-bold">
             Compare Our Plans
           </h1>
-          <p className="text-[#6c757d] text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
+          <p className="text-martex-light_text text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
             Complete list of features available in our pricing plans
           </p>
         </div>
