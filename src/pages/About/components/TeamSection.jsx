@@ -57,11 +57,11 @@ export default function TeamSection() {
     <section className="py-20 bg-white xl:px-0 md:px-12">
       <div className="mx-auto max-w-[1300px]">
         <div className="mb-10">
-          <h1 className="font-semibold sm:leading-relaxed text-center text-3xl md:text-5xl xl:text-6xl text-martex-dark_text">
+          <h1 className="text-3xl font-semibold text-center sm:leading-relaxed md:text-5xl xl:text-6xl text-martex-dark_text">
             All we do is dream and craft <br className="hidden sm:block" />{" "}
             amazing products
           </h1>
-          <p className="font-medium text-martex-light_text text-center text-lg md:text-xl xl:text-2xl mt-4">
+          <p className="mt-4 text-lg font-medium text-center text-martex-light_text md:text-xl xl:text-2xl">
             Ligula risus auctor tempus magna feugiat lacinia.
           </p>
         </div>
@@ -74,17 +74,17 @@ export default function TeamSection() {
               className="overflow-hidden transition bg-white rounded-2xl"
             >
               {/* Image */}
-              <div className="aspect-[4/5] bg-gray-100">
+              <div className="aspect-[4/5] bg-gray-100 overflow-hidden">
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="object-cover w-full h-full transition-all duration-300 rounded-xl hover:scale-105"
+                  className="object-cover w-full overflow-hidden transition-all duration-300 rounded-xl hover:scale-105"
                 />
               </div>
 
               {/* Info */}
               <div className="p-4">
-                <h3 className="text-xl xl:text-2xl font-semibold text-martex-dark_text">
+                <h3 className="text-xl font-semibold xl:text-2xl text-martex-dark_text">
                   {member.name}
                 </h3>
                 <p className="mt-1 text-base xl:text-xl text-martex-light_text">

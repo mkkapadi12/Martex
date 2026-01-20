@@ -71,10 +71,10 @@ const Project = () => {
         {/* Header Title Section */}
         <section className="container pt-[160px] sm:pt-[150px] xl:pt-[180px] mx-auto ">
           <div className="text-center">
-            <h1 className="text-martex-dark_text md:text-5xl sm:px-0 px-12 text-3xl xl:text-6xl font-semibold">
+            <h1 className="px-12 text-3xl font-semibold text-martex-dark_text md:text-5xl sm:px-0 xl:text-6xl">
               Great Design That Works!
             </h1>
-            <p className="text-martex-light_text mt-6 text-lg md:text-xl xl:text-2xl px-10 sm:px-4">
+            <p className="px-10 mt-6 text-lg text-martex-light_text md:text-xl xl:text-2xl sm:px-4">
               Ligula risus auctor tempus magna feugiat lacinia.
             </p>
           </div>
@@ -88,7 +88,7 @@ const Project = () => {
                   key={item.id}
                   className="relative space-y-4 overflow-hidden group"
                 >
-                  <h1 className="md:text-2xl text-xl xl:text-3xl text-martex-dark_text font-semibold">
+                  <h1 className="text-xl font-semibold md:text-2xl xl:text-3xl text-martex-dark_text">
                     {item.title}
                   </h1>
 
@@ -100,7 +100,7 @@ const Project = () => {
                   />
 
                   {/* Eye Icon */}
-                  <div className="absolute inset-0 top-8 rounded-[16px] flex items-end justify-center transition-all duration-500 group-hover:items-center group-hover:bg-[#14141440]">
+                  <div className="absolute inset-0 top-9 rounded-[16px] flex items-end justify-center transition-all duration-500 group-hover:items-center group-hover:bg-[#14141440]">
                     <div className="transition-all duration-700 translate-y-8 rounded-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
                       <Eye className="text-white" size={35} />
                     </div>
