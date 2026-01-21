@@ -58,7 +58,7 @@ export default function Navbar({ data }) {
           </Link>
           <Link to="/signup">
             <button
-              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-transparent hover:border-white border-2 border-martex-light_pink transition-all duration-300`}
+              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-transparent hover:border-white border-2 border-martex-light_blue transition-all duration-300`}
             >
               {btn_text}
             </button>
