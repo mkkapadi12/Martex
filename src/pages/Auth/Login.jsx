@@ -98,9 +98,12 @@ export default function Login() {
             </div>
 
             <div className="text-left">
-              <a href="#" className="text-base text-martex-dark_blue hover:underline">
+              <Link
+                to="/reset-password"
+                className="text-base text-martex-dark_blue hover:underline"
+              >
                 Forgot your password?
-              </a>
+              </Link>
             </div>
 
             <button className="w-full py-3 font-semibold text-white transition-all duration-300 rounded-lg bg-martex-light_blue hover:bg-martex-dark_blue">

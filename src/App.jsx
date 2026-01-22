@@ -15,6 +15,7 @@ import ProjectDetails from "./pages/ProjectDetail/ProjectDetails";
 import Download from "./pages/Download";
 import HelpCenter from "./pages/HelpCenter";
 import FAQs from "./pages/FAQs";
+import Reset from "./pages/Auth/Reset";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         {/* Auth routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/reset-password" element={<Reset />} />
 
         {/* Pages */}
         <Route path="/" element={<Home />} />
