@@ -14,6 +14,7 @@ import SingleBlog from "./pages/Blog/SingleBlog";
 import ProjectDetails from "./pages/ProjectDetail/ProjectDetails";
 import Download from "./pages/Download";
 import HelpCenter from "./pages/HelpCenter";
+import FAQs from "./pages/FAQs";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/download" element={<Download />} />
         <Route path="/help" element={<HelpCenter />} />
+        <Route path="/faqs" element={<FAQs />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />

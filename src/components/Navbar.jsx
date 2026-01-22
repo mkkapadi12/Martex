@@ -27,12 +27,16 @@ export default function Navbar({ data }) {
     >
       <nav
         className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-6xl lg:px-5 ${
-          scrolled ? "py-3" : "py-7"
+          scrolled ? "py-5 sm:py-3" : "py-7"
         }`}
       >
         {/* Logo */}
         <Link to="/">
-          <img src={scrolled ? logoscroll : logo} alt="logo" className="h-10" />
+          <img
+            src={scrolled ? logoscroll : logo}
+            alt="logo"
+            className="h-8 xl:h-10"
+          />
         </Link>
 
         {/* Desktop Menu */}

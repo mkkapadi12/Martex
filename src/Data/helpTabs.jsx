@@ -26,14 +26,14 @@ export const helpTabs = [
 export const helpitems1 = [
   {
     value: "item-1",
-    trigger: "What is Martex and how does it work?",
+    trigger: "1. What is Martex and how does it work?",
     content: [
       "Sagittis congue augue egestas volutpat egestas magna suscipit egestas magna ipsum vitae purus congue efficitur and ipsum primis in cubilia laoreet augue egestas luctus donec and curabitur dapibus",
     ],
   },
   {
     value: "item-2",
-    trigger: "What's inside the package?",
+    trigger: "2. What's inside the package?",
     content: [
       "Sagittis congue augue egestas volutpat egestas magna suscipit egestas tempor magna undo ipsum vitae purus and efficitur ipsum primis in cubilia laoreet tempor gravida luctus neque purus ipsum neque",
       "Sapien egestas, congue gestas posuere cubilia congue ipsum mauris lectus laoreet and gestas neque vitae auctor dolor luctus placerat a magna cursus congue magna mpedit ligula undo congue. Maecenas agravida augue porttitor nunc, quis vehicula magna luctus tempor. Quisque vel laoreet turpis. Viverra augue, a augue tempor, dictum tempor diam. Sed pulvinar a consectetur nibh, imperdiet varius viverra",
@@ -41,7 +41,7 @@ export const helpitems1 = [
   },
   {
     value: "item-3",
-    trigger: "General settings",
+    trigger: "3. General settings",
     content: [
       "An augue cubilia laoreet magna suscipit egestas magna ipsum purus ipsum a primis an augue ultrice ligula egestas suscipit lectus gestas integer congue a lectus porta phasellus neque blandit tristique",
       "Sagittis congue augue egestas volutpat egestas magna suscipit egestas and magna and vehicula",
@@ -50,7 +50,7 @@ export const helpitems1 = [
   },
   {
     value: "item-4",
-    trigger: "Which languages does Martex support?",
+    trigger: "4. Which languages does Martex support?",
     content: [
       "An augue cubilia laoreet and magna suscipit egestas magna ipsum purus ipsum primis undo augue ultrice ligula egestas suscipit lectus gestas integer congue a lectus porta tristique phasellus neque a blandit and tristique justo aliquam justo suscipit congue augue egestas volutpat egestas magna sem congue",
       "An augue cubilia laoreet and magna suscipit egestas magna ipsum purus ipsum primis and augue efficitur ligula egestas suscipit lectus gestas integer congue a lectus porta phasellus neque",
@@ -58,7 +58,7 @@ export const helpitems1 = [
   },
   {
     value: "item-5",
-    trigger: "Automate testing with API",
+    trigger: "5. Automate testing with API",
     content: [
       "Curabitur ac dapibus libero quisque eu congue tristique egestas phasellus blandit tristique justo aliquam. Aliquam vitae molestie quisque sapien justo, aliquet aliquam molestie sed purus undo venenatis tempor gravida eget lacinia. Augue aliquam a suscipit tincidunt tincidunt massa",
       "Aliquam vitae molestie nunc. Quisque sapien justo, aliquet non molestie sed purus, venenatis",
@@ -195,4 +195,12 @@ export const helpitems4 = [
       "Sagittis congue augue egestas volutpat egestas magna suscipit egestas and magna ipsum vitae.",
     ],
   },
+];
+
+export const faqs = [
+  "Getting Started",
+  "Manage your account",
+  "Purchase and License",
+  "Policy, Safety & Copyright",
+  "Other Questions",
 ];
