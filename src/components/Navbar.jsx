@@ -19,23 +19,25 @@ export default function Navbar({ data }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#ffffffb3] shadow-md opacity-100" : `bg-transparent`
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#ffffffb3] shadow-md backdrop-blur-md"
+          : `bg-transparent`
       }`}
     >
       <nav
-        className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-6xl lg:px-8 ${
+        className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-6xl lg:px-5 ${
           scrolled ? "py-3" : "py-7"
         }`}
       >
         {/* Logo */}
         <Link to="/">
-          <img src={scrolled ? logoscroll : logo} alt="logo" className="h-8" />
+          <img src={scrolled ? logoscroll : logo} alt="logo" className="h-10" />
         </Link>
 
         {/* Desktop Menu */}
         <div
-          className={`hidden lg:flex gap-x-10 transition-all duration-300 ${
+          className={`hidden lg:flex gap-x-10 transition-all duration-300 lg:justify-end lg:w-1/2 ${
             scrolled ? "text-martex-dark_text" : `${link_color}`
           }`}
         >

@@ -3,6 +3,7 @@ export const martex = {
   brand: "#8a4be0",
 
   // Text theme
+  dim_text: "#c3c4c5",
   light_text: "#6c757d",
   dark_text: "#353f4f",
 

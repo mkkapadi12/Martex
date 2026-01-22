@@ -29,15 +29,21 @@ const Pricing = () => {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main
+      className="min-h-screen"
+      style={{
+        backgroundImage:
+          "linear-gradient(180deg,rgba(244,244,249,0.8) 50%,rgba(244,244,249,0.05) 100%)",
+      }}
+    >
       <Navbar data={data} />
       <section className="px-4 pt-20 mx-auto max-w-[1350px]">
         <div className="container mx-auto">
           <div className="pt-20 text-center">
-            <h1 className="my-6 text-3xl md:text-5xl xl:text-6xl text-martex-dark_text font-bold">
+            <h1 className="my-6 text-3xl font-bold md:text-5xl xl:text-6xl text-martex-dark_text">
               Simple, Flexible Pricing
             </h1>
-            <p className="text-martex-light_text text-lg md:text-xl xl:text-2xl flex justify-center items-center mx-auto w-fit">
+            <p className="flex items-center justify-center mx-auto text-lg text-martex-light_text md:text-xl xl:text-2xl w-fit">
               Billed monthly
               <span>
                 <Switch className="w-12 mx-3 h-7" />
