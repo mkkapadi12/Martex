@@ -16,6 +16,7 @@ import Download from "./pages/Download";
 import HelpCenter from "./pages/HelpCenter";
 import FAQs from "./pages/FAQs";
 import Reset from "./pages/Auth/Reset";
+import Teams from "./pages/Teams";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/download" element={<Download />} />
         <Route path="/help" element={<HelpCenter />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/teams" element={<Teams />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />

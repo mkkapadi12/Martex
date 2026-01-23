@@ -63,3 +63,123 @@ export const testimonialsData = [
     img: "https://randomuser.me/api/portraits/men/88.jpg",
   },
 ];
+
+export const teamsData = [
+  {
+    id: 1,
+    name: "Jonathan Barnes",
+    role: "Founder and CEO",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Jaime Fletcher",
+    role: "Senior Software Developer",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Les Bakker",
+    role: "Software Engineer",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Alyssa Garrison",
+    role: "Web Development",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-4.jpg",
+  },
+  {
+    id: 5,
+    name: "Charlotte Johnson",
+    role: "Content Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-5.jpg",
+  },
+  {
+    id: 6,
+    name: "Olivia Steiner",
+    role: "Customers Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-6.jpg",
+  },
+  {
+    id: 7,
+    name: "Charles Fairless",
+    role: "Customers Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-7.jpg",
+  },
+  {
+    id: 8,
+    name: "Nancy Taylor",
+    role: "Head of Marketing",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-8.jpg",
+  },
+  {
+    id: 9,
+    name: "Robert Walder",
+    role: "Product Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-9.jpg",
+  },
+  {
+    id: 10,
+    name: "Michael Green",
+    role: "Marketing Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-10.jpg",
+  },
+  {
+    id: 11,
+    name: "Nadine Adams",
+    role: "Marketing Copywriter",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-11.jpg",
+  },
+  {
+    id: 12,
+    name: "Andrew Barker",
+    role: "Product Support Manager",
+    img: "https://martex-tailwindcss.ibthemespro.com/images/team-12.jpg",
+  },
+];
+
+export const jobsData = [
+  {
+    id: 1,
+    department: "Sales",
+    title: "Senior Account Executive",
+    location: "New York, NY",
+    type: "Full time",
+  },
+  {
+    id: 2,
+    department: "Engineering",
+    title: "Software Engineer, Security",
+    location: "Vancouver, British Columbia, Canada",
+    type: "Remote",
+  },
+  {
+    id: 3,
+    department: "Engineering",
+    title: "Senior Backend Engineer",
+    location: "New York, NY",
+    type: "Full time",
+  },
+  {
+    id: 4,
+    department: "Engineering",
+    title: "Engineering Tech Lead",
+    location: "Vancouver, British Columbia, Canada",
+    type: "Remote",
+  },
+  {
+    id: 5,
+    department: "Sales",
+    title: "Mid-Market Account Executive",
+    location: "New York, NY",
+    type: "Full time",
+  },
+  {
+    id: 6,
+    department: "Marketing",
+    title: "Product Marketing Manager",
+    location: "Vancouver, British Columbia, Canada",
+    type: "Remote",
+  },
+];
