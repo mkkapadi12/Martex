@@ -6,7 +6,7 @@ export const homeNav = [
   { name: "FAQs", link: "/faqs" },
 ];
 
-export const pricingNav = [
+export const othersNav = [
   { name: "Company", link: "/company" },
   { name: "Case Studies", link: "/casestudies" },
   { name: "Pricing", link: "/pricing" },

@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { X, ChevronDown } from "lucide-react";
-import { homeNav, pricingNav } from "../Data/navigation";
+import { homeNav, othersNav } from "../Data/navigation";
 
 export default function Navbar({ data }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { text, logo, logoscroll, link_color, btn_color, btn_text } = data;
+
+  const location = useLocation();
+  const navlinks = location.pathname === "/" ? homeNav : othersNav;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +25,7 @@ export default function Navbar({ data }) {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-[#ffffffb3] shadow-md backdrop-blur-md"
-          : `bg-transparent`
+          : `sm:bg-transparent ${location.pathname === "/" ? "bg-martex-brand" : "bg-white"}`
       }`}
     >
       <nav
@@ -45,7 +48,7 @@ export default function Navbar({ data }) {
             scrolled ? "text-martex-dark_text" : `${link_color}`
           }`}
         >
-          {pricingNav.map((item, index) => (
+          {navlinks.map((item, index) => (
             <Link key={index} to={item.link} className="text-lg font-medium ">
               {item.name}
             </Link>
@@ -64,7 +67,10 @@ export default function Navbar({ data }) {
           </Link>
           <Link to="/signup">
             <button
-              className={`px-6 text-lg py-2 text-white ${btn_color} rounded-md hover:bg-transparent hover:border-white border-2 border-martex-light_blue transition-all duration-300`}
+              className={`px-6 text-lg py-1  border-2 text-white ${btn_color} rounded-sm  transition-all duration-300
+              
+              ${location.pathname === "/" ? "border-martex-light_pink hover:border-white hover:bg-transparent" : "hover:bg-martex-dark_blue hover:border-martex-dark_blue border-martex-light_blue"}
+              `}
             >
               {btn_text}
             </button>
@@ -73,7 +79,13 @@ export default function Navbar({ data }) {
 
         {/* Mobile Menu Button */}
         <button
-          className="text-2xl text-martex-light_text lg:hidden"
+          className={`text-2xl lg:hidden ${
+            scrolled
+              ? `text-martex-light_text`
+              : location.pathname === "/"
+                ? "text-white"
+                : "text-martex-light_text"
+          }`}
           onClick={() => setOpen(true)}
         >
           ☰
