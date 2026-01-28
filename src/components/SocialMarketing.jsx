@@ -4,35 +4,49 @@ import f2 from "../assets/images/f_04.png";
 
 export default function SocialMarketing() {
   return (
-    <section className="py-16">
-      <div className="mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-martex-dark_text max-w-4xl mx-auto">
-          Reach your audience through social media marketing
-        </h2>
-        <p className="text-martex-light_text text-lg sm:text-2xl mt-4">
-          Ligula risus auctor tempus magna feugiat lacinia.
-        </p>
-      </div>
-
-      <div className="grid gap-8 px-6 mx-auto md:grid-cols-2 max-w-7xl">
-        <div className="p-5 text-center bg-gray-100 md:p-16 rounded-2xl">
-          <h3 className="text-xl sm:text-3xl font-semibold text-martex-dark_text mb-4">
-            Marketing Integrations
-          </h3>
-          <p className="text-martex-light_text mb-6">
-            Aliquam a augue suscipit luctus diam neque
+    <section className="py-10 xl:py-12">
+      <div className="container px-3 mx-auto sm:px-6">
+        {/* text */}
+        <div className="px-4 mx-auto mb-12 space-y-4 text-center sm:max-w-3xl xl:max-w-4xl sm:px-0">
+          <h2 className="text-3xl font-semibold sm:text-5xl xl:text-[55px] !leading-snug xl:!leading-tight text-martex-dark_text">
+            Reach your audience through social media marketing
+          </h2>
+          <p className="text-lg sm:text-xl text-martex-light_text xl:text-2xl">
+            Ligula risus auctor tempus magna feugiat lacinia.
           </p>
-          <img src={f1} alt="marketing" className="mx-auto" />
         </div>
-
-        <div className="p-5 text-center bg-gray-100 md:p-16 rounded-2xl">
-          <img src={f2} alt="productivity" className="mx-auto mb-6" />
-          <h3 className="text-xl sm:text-3xl font-semibold text-martex-dark_text">
-            Productivity Focused
-          </h3>
-          <p className="text-martex-light_text">
-            Aliquam a augue suscipit luctus diam neque
-          </p>
+        {/* content */}
+        <div className="grid gap-8 sm:px-6 xl:px-0 mx-auto md:grid-cols-2 max-w-[1300px]">
+          {/* 1 */}
+          <div className="flex flex-col-reverse gap-5 p-8 text-center bg-gray-100 sm:flex-col md:p-16 rounded-2xl">
+            <div className="space-y-4">
+              <h3 className="text-[22px] font-semibold sm:text-2xl xl:text-3xl text-martex-dark_text">
+                Marketing Integrations
+              </h3>
+              <p className="xl:text-lg text-martex-light_text">
+                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
+                dolor primis libero
+              </p>
+            </div>
+            <div>
+              <img src={f1} alt="marketing" className="mx-auto" />
+            </div>
+          </div>
+          {/* 2 */}
+          <div className="flex flex-col gap-5 p-8 text-center bg-gray-100 md:p-16 rounded-2xl">
+            <div>
+              <img src={f2} alt="productivity" />
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-[22px] font-semibold sm:text-2xl xl:text-3xl text-martex-dark_text">
+                Productivity Focused
+              </h3>
+              <p className="xl:text-lg text-martex-light_text">
+                Aliquam a augue suscipit luctus diam neque purus ipsum neque and
+                dolor primis libero
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

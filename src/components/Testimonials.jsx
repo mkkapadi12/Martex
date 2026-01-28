@@ -27,74 +27,80 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="container px-4 py-12 mx-auto">
-      <div className="pb-10 sm:pb-16">
-        <div className="max-w-4xl py-10 mx-auto ">
-          <h1 className="text-3xl font-bold text-center sm:text-4xl lg:text-6xl text-martex-dark_text">
-            Here’s what our amazing clients are saying
-          </h1>
-          <p className="pt-10 text-lg text-center text-gray-600 sm:text-2xl">
-            Ligula risus auctor tempus magna feugiat lacinia.
-          </p>
-        </div>
-        <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="w-full max-w-6xl mx-auto mb-10"
-        >
-          <CarouselContent>
-            {testimonialsData.map((item, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4 sm:p-2 ">
-                  <Card>
-                    <CardContent className="flex items-center justify-center p-6">
-                      <div className="pt-6">
-                        <p className="mb-4 text-lg text-gray-600 text-start">
-                          {item.desc}
-                        </p>
-                        <div className="flex items-center gap-4 mt-4">
-                          <div className="w-12 h-12 rounded-full">
-                            <img
-                              src={item.img}
-                              alt=""
-                              className="rounded-full"
-                            />
-                          </div>
-                          <div>
-                            <h3 className="text-lg font-semibold text-[#343a40]">
-                              {item.name}
-                            </h3>
-                            <h3 className="text-sm text-gray-500">
-                              {item.role}
-                            </h3>
+    <section className="py-10 xl:py-12 bg-slate-50">
+      <div className="container px-3 mx-auto sm:px-6">
+        {/* testimonials */}
+        <div className="mx-auto max-w-[1300px]">
+          {/* title */}
+          <div className="max-w-3xl py-10 mx-auto xl:max-w-4xl">
+            <h1 className="text-[28px] font-bold text-center sm:text-5xl xl:text-[55px] !leading-tight text-martex-dark_text">
+              Here’s what our amazing clients are saying
+            </h1>
+            <p className="pt-6 text-xl text-center xl:pt-10 xl:text-2xl text-martex-light_text">
+              Ligula risus auctor tempus magna feugiat lacinia.
+            </p>
+          </div>
+          {/* clients */}
+          <Carousel
+            opts={{
+              align: "start",
+            }}
+            className="w-full mx-auto mb-10 max-w-[1300px] xl:px-0 sm:px-6"
+          >
+            <CarouselContent>
+              {testimonialsData.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-4 sm:p-2">
+                    <Card className="rounded-[8px]">
+                      <CardContent className="flex items-center justify-center xl:p-6">
+                        <div className="pt-6">
+                          <p className="mb-4 text-base xl:text-lg text-martex-light_text text-start">
+                            {item.desc}
+                          </p>
+                          <div className="flex items-center gap-4 mt-4">
+                            <div className="w-12 h-12 rounded-full">
+                              <img
+                                src={item.img}
+                                alt=""
+                                className="rounded-full"
+                              />
+                            </div>
+                            <div>
+                              <h3 className="text-lg font-semibold text-martex-dark_text">
+                                {item.name}
+                              </h3>
+                              <h3 className="text-sm text-martex-light_text">
+                                {item.role}
+                              </h3>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
+        {/* ratings */}
+        <div className="mx-auto text-xl text-center max-w-[1300px] text-martex-light_text pt-20">
+          <div className="px-12 text-lg xl:text-xl xl:px-0">
+            <h1>Our clients love us as much as we love them</h1>
+          </div>
+          <div className="flex flex-wrap items-start justify-center gap-4 mt-2 xl:gap-10">
+            {brands.map((brand, index) => (
+              <div key={index} className="p-5 xl::p-10">
+                {/* Company img */}
+                <div className="h-auto mx-auto mb-4 w-36 xl:w-40">
+                  <img src={brand.img} alt={`brand ${index + 1}`} />
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden md:block" />
-          <CarouselNext className="hidden md:block" />
-        </Carousel>
-      </div>
-      <div className="mx-auto text-xl text-center max-w-7xl text-martex-light_text">
-        <h1>Our clients love us as much as we love them</h1>
-        <div className="flex flex-wrap items-start justify-center gap-10 mt-2">
-          {brands.map((brand, index) => (
-            <div key={index} className="py-5 md:p-10">
-              {/* Company img */}
-              <div className="w-40 h-auto mx-auto mb-4">
-                <img src={brand.img} alt={`brand ${index + 1}`} />
-              </div>
-              {/* Ratings */}
+                {/* Ratings */}
 
-              <StarRating rating={brand.rate} max={5} />
-            </div>
-          ))}
+                <StarRating rating={brand.rate} max={5} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

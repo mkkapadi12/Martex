@@ -1,51 +1,49 @@
 import React from "react";
-import f2 from "../assets/images/img-02.png";
+import f2 from "../assets/images/img-03.png";
+import { Button } from "./ui/button";
 
 const SmarterWayToWork = () => {
   return (
-    <section className="py-20 overflow-hidden bg-white">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid items-center grid-cols-1 gap-16 lg:grid-cols-2">
-          <div>
-            <img src={f2} alt="smarter way to work" />
-          </div>
+    <section className="py-10 xl:py-12">
+      <div className="container px-3 mx-auto sm:px-6">
+        <div className="mx-auto max-w-[1300px]">
+          <div className="grid items-center justify-center grid-cols-1 gap-6 lg:grid-cols-2">
+            {/* image */}
+            <div className="p-2 xl:px-3">
+              <img src={f2} alt="smarter way to work" />
+            </div>
+            {/* content */}
+            <div className="order-1 space-y-4 xl:space-y-6 lg:order-2 xl:px-3">
+              <h2 className="text-xl font-semibold sm:text-2xl xl:text-3xl text-martex-dark_text">
+                The smarter way to work
+              </h2>
 
-          <div className="order-1 lg:order-2">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-martex-dark_text mb-6">
-              The smarter way to work
-            </h2>
+              <p className="text-base leading-relaxed xl:text-lg text-martex-light_text">
+                Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
+                neque auctor turpis vitae dolor luctus placerat magna and ligula
+                cursus purus vitae purus an ipsum suscipit
+              </p>
 
-            <p className="mb-10 text-lg leading-relaxed text-gray-600">
-              Sodales tempor sapien quaerat ipsum undo congue laoreet turpis
-              neque auctor turpis vitae dolor luctus placerat magna and ligula
-              cursus purus vitae purus an ipsum suscipit
-            </p>
+              <h3 className="text-xl font-bold sm:text-2xl xl:text-3xl text-martex-dark_text">
+                Full access to all features
+              </h3>
 
-            <h3 className="text-2xl font-bold text-martex-dark_text mb-6">
-              Full access to all features
-            </h3>
-
-            <ul className="mb-10 space-y-6">
-              <li className="flex items-start">
-                <span className="mr-3 mt-1.5 w-1.5 h-1.5 bg-gray-500 rounded-full flex-shrink-0"></span>
-                <span className="leading-relaxed text-gray-600">
+              <ul className="ml-5 space-y-6 text-base list-disc xl:text-lg text-martex-light_text">
+                <li className="">
                   Cursus purus suscipit vitae cubilia magnis volute egestas
                   vitae sapien turpis sodales magna undo aoreet primis
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-1.5 w-1.5 h-1.5 bg-gray-500 rounded-full flex-shrink-0"></span>
-                <span className="leading-relaxed text-gray-600">
+                </li>
+                <li className="">
                   Tempor sapien quaerat an ipsum laoreet purus and sapien dolor
                   an ultrice ipsum aliquam undo congue dolor cursus purus congue
                   and ipsum purus sapien a blandit
-                </span>
-              </li>
-            </ul>
+                </li>
+              </ul>
 
-            <button className="inline-flex items-center px-8 py-3 border-2 border-martex-light_pink rounded-md text-base font-semibold text-martex-light_pink hover:bg-martex-light_pink hover:text-white transition-colors duration-300">
-              What's possible?
-            </button>
+              <Button className="px-5 py-[18px] text-base font-semibold duration-300 bg-transparent border-2 rounded-[6px] xl:py-6 xl:text-lg xl:px-7 border-martex-dark_text hover:bg-martex-light_pink hover:border-martex-light_pink text-martex-dark_text hover:text-white">
+                What's possible?
+              </Button>
+            </div>
           </div>
         </div>
       </div>

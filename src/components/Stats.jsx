@@ -6,18 +6,20 @@ export default function Stats() {
   ];
 
   return (
-    <section className="py-16">
-      <div className="flex flex-col justify-center px-6 mx-auto sm:justify-between max-w-7xl md:flex-row">
-        {stats.map((s, i) => (
-          <div key={i} className="flex items-center justify-center mb-8">
-            <h3 className="text-4xl sm:text-6xl font-semibold text-martex-dark_text">
-              {s.value}
-            </h3>
-            <p className="text-martex-light_text text-lg sm:text-xl px-6">
-              {s.text}
-            </p>
-          </div>
-        ))}
+    <section className="py-10 xl:py-12">
+      <div className="container px-3 mx-auto sm:px-6">
+        <div className="flex flex-col justify-center mx-auto sm:justify-between md:flex-row xl:max-w-[1300px]">
+          {stats.map((s, i) => (
+            <div key={i} className="sm:px-5 xl:px-6 flex sm:flex-row flex-col items-center justify-center gap-4 w-full max-w-full mb-8 xl:w-4/12 lg:w-4/12 md:w-4/12 flex-[0_0_auto]">
+              <h3 className="text-4xl font-semibold sm:text-5xl xl:text-6xl text-martex-dark_text">
+                {s.value}
+              </h3>
+              <p className="px-2 text-base xl:px-6 text-martex-light_text xl:text-xl">
+                {s.text}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -3,25 +3,30 @@ import dashboard from "../assets/images/dashboard-01.png";
 
 const TrackProgress = () => {
   return (
-    <div className="py-20 bg-slate-50">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-martex-dark_text mb-6 max-w-4xl mx-auto text-center">
-            Track the progress towards objectives with key results
-          </h2>
-          <p className="max-w-3xl mx-auto mb-8 text-lg leading-relaxed text-center text-gray-600 sm:text-xl">
-            Ligula risus auctor tempus magna feugiat lacinia.
-          </p>
-        </div>
-        <div className="mt-12">
-          <img
-            src={dashboard}
-            alt="Dashboard showing progress tracking"
-            className="w-full h-auto rounded-lg"
-          />
+    <section className="pt-16 pb-10 xl:pb-12 bg-slate-100">
+      <div className="container px-3 mx-auto sm:px-6">
+        <div className="mx-auto max-w-[1300px]">
+          {/* text */}
+          <div className="space-y-4">
+            <h2 className="max-w-4xl !leading-tight font-bold text-center mx-auto text-3xl sm:text-[44px] xl:text-6xl text-martex-dark_text">
+              Track the progress towards <br className="hidden sm:block" />{" "}
+              objectives with key results
+            </h2>
+            <p className="text-xl text-center text-martex-light_text xl:text-[26px]">
+              Ligula risus auctor tempus magna feugiat lacinia.
+            </p>
+          </div>
+          {/* image */}
+          <div className="mt-16 sm:px-3 xl:px-0">
+            <img
+              src={dashboard}
+              alt="Dashboard showing progress tracking"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

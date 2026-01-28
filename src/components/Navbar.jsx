@@ -30,7 +30,7 @@ export default function Navbar({ data }) {
     >
       <nav
         className={`flex items-center justify-between px-6 mx-auto transition-all duration-300 max-w-6xl lg:px-5 ${
-          scrolled ? "py-5 sm:py-3" : "py-7"
+          scrolled ? "py-5 sm:py-5" : "py-7"
         }`}
       >
         {/* Logo */}
@@ -44,12 +44,16 @@ export default function Navbar({ data }) {
 
         {/* Desktop Menu */}
         <div
-          className={`hidden lg:flex gap-x-10 transition-all duration-300 lg:justify-end lg:w-1/2 ${
+          className={`hidden lg:flex gap-x-10 transition-all duration-300 lg:justify-end lg:w-[53%] ${
             scrolled ? "text-martex-dark_text" : `${link_color}`
           }`}
         >
           {navlinks.map((item, index) => (
-            <Link key={index} to={item.link} className="text-lg font-medium ">
+            <Link
+              key={index}
+              to={item.link}
+              className="text-base xl:text-[19px] font-medium"
+            >
               {item.name}
             </Link>
           ))}
@@ -59,7 +63,7 @@ export default function Navbar({ data }) {
         <div className="items-center hidden gap-4 lg:flex">
           <Link
             to="/login"
-            className={`font-semibold text-lg ${
+            className={`font-semibold text-base xl:text-lg ${
               scrolled ? "text-martex-dark_text" : `${text}`
             }`}
           >
@@ -67,9 +71,9 @@ export default function Navbar({ data }) {
           </Link>
           <Link to="/signup">
             <button
-              className={`px-6 text-lg py-1  border-2 text-white ${btn_color} rounded-sm  transition-all duration-300
+              className={`px-5 xl:px-6 text-base xl:text-lg py-1  border-2 text-white ${btn_color} rounded-[6px]  transition-all duration-300
               
-              ${location.pathname === "/" ? "border-martex-light_pink hover:border-white hover:bg-transparent" : "hover:bg-martex-dark_blue hover:border-martex-dark_blue border-martex-light_blue"}
+              ${location.pathname === "/" ? (scrolled ? "border-martex-light_pink hover:border-martex-dark_text hover:text-martex-dark_text hover:bg-transparent" : "border-martex-light_pink hover:border-white hover:bg-transparent") : "hover:bg-martex-dark_blue hover:border-martex-dark_blue border-martex-light_blue"}
               `}
             >
               {btn_text}

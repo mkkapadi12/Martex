@@ -9,35 +9,42 @@ const Productivity = () => {
     "Volute turpis dolores and sagittis congue",
   ];
   return (
-    <section className="container py-20 mx-auto overflow-hidden">
-      <div className="px-4 mx-auto mb-10 max-w-7xl sm:px-6 lg:px-8 sm:mb-20">
-        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-6">
-          <div className="max-w-lg mx-auto lg:mx-0">
-            <span className="block mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase">
-              One-stop solution
-            </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-martex-dark_text leading-tight mb-6">
-              Achieve more with better workflows
-            </h2>
-            <p className="mb-8 text-lg leading-relaxed text-gray-600">
-              Sodales tempor sapien quaerat ipsum and congue undo laoreet turpis
-              neque auctor turpis vitae dolor luctus placerat magna ligula and
-              cursus vitae
-            </p>
+    <section className="py-10 xl:py-12">
+      <div className="container px-3 mx-auto sm:px-6">
+        <div className="mx-auto max-w-[1300px]">
+          <div className="grid items-center grid-cols-1 gap-10 sm:px-6 lg:grid-cols-2 xl:gap-12 xl:px-0 ">
+            {/* text */}
+            <div className="order-2 space-y-5 sm:order-1 xl:px-2">
+              <h2 className="text-sm font-semibold uppercase xl:text-base text-martex-light_text">
+                Productivity Focused
+              </h2>
+              <h1 className="text-[26px] sm:text-[44px] font-bold leading-tight xl:text-[53px] text-martex-dark_text">
+                Achieve more with <br className="hidden sm:block" /> better
+                workflows
+              </h1>
+              <p className="text-base leading-relaxed xl:text-lg text-martex-light_text">
+                Sodales tempor sapien quaerat ipsum and congue undo laoreet
+                turpis neque auctor turpis vitae dolor luctus placerat magna
+                ligula and cursus vitae
+              </p>
 
-            <ul className="space-y-5">
-              {bulletPoints.map((point, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="mt-1 mr-3 text-pink-500">
-                    <CheckIcon />
-                  </span>
-                  <span className="text-lg text-gray-600">{point}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="">
-            <img src={f13} alt="productivity" />
+              <ul className="space-y-3">
+                {bulletPoints.map((point, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="mr-2 text-martex-light_pink">
+                      <CheckIcon size={18} />
+                    </span>
+                    <span className="text-base xl:text-lg text-martex-light_text">
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* image */}
+            <div className="order-1 sm:order-2 xl:px-4">
+              <img src={f13} alt="productivity" />
+            </div>
           </div>
         </div>
       </div>
