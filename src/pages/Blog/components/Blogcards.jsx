@@ -4,9 +4,9 @@ const Blogcards = ({ blogPosts }) => {
   return (
     <div className="mt-10">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => {
+        {blogPosts.map((post, index) => {
           return (
-            <div className="px-0 py-4 xl:px-2">
+            <div className="px-0 py-4 xl:px-2" key={index}>
               {/* blog image */}
               <div className="rounded-[12px]">
                 <img
@@ -27,7 +27,7 @@ const Blogcards = ({ blogPosts }) => {
                 <p className="mt-2 text-base sm:text-base/7 xl:text-lg/8 text-martex-light_text">
                   {post.description}
                 </p>
-                <p className="mt-4 text-base xl:text-lg  text-martex-dark_text">
+                <p className="mt-4 text-base xl:text-lg text-martex-dark_text">
                   <span className="font-semibold">By {post.author}</span> |{" "}
                   {post.date}
                 </p>

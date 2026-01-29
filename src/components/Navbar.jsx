@@ -9,7 +9,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 
 const pagenavigation = [
@@ -77,7 +76,7 @@ export default function Navbar({ data }) {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
           ? "bg-[#ffffffb3] shadow-md backdrop-blur-md"
-          : `sm:bg-transparent ${location.pathname === "/" ? "bg-martex-brand" : "bg-white"}`
+          : `sm:bg-transparent ${location.pathname === "/" ? "bg-martex-brand" : "bg-transparent"}`
       }`}
     >
       <nav
@@ -115,7 +114,7 @@ export default function Navbar({ data }) {
               <NavigationMenuItem className="!bg-transparent hover:!bg-transparent !text-base xl:!text-[19px] !font-medium">
                 <NavigationMenuTrigger
                   className={`!bg-transparent hover:!bg-transparent p-0 text-base xl:!text-[19px] !font-medium ${
-                    scrolled ? "!text-martex-dark_text" : "!text-white"
+                    scrolled ? "!text-martex-dark_text" : `${link_color}`
                   } `}
                 >
                   About
@@ -167,7 +166,7 @@ export default function Navbar({ data }) {
               >
                 <NavigationMenuTrigger
                   className={`!bg-transparent hover:!bg-transparent p-0 text-base xl:!text-[19px] !font-medium ${
-                    scrolled ? "!text-martex-dark_text" : "!text-white"
+                    scrolled ? "!text-martex-dark_text" : `${link_color}`
                   } `}
                 >
                   Pages
@@ -242,7 +241,7 @@ export default function Navbar({ data }) {
               ? `text-martex-light_text`
               : location.pathname === "/"
                 ? "text-white"
-                : "text-martex-light_text"
+                : `${text}`
           }`}
           onClick={() => setOpen(true)}
         >

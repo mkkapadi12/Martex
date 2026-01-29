@@ -5,7 +5,6 @@ import a21 from "../../assets/images/about/a2-1.jpg";
 import a22 from "../../assets/images/about/a2-2.jpg";
 import a23 from "../../assets/images/about/a2-3.jpg";
 import a24 from "../../assets/images/about/a2-4.jpg";
-import Services from "./components/Services";
 import Company from "../../components/Company";
 import TeamSection from "./components/TeamSection";
 import TestimonialsSection from "./components/TestimonialsSection";
@@ -14,6 +13,8 @@ import logo from "../../assets/images/logo-blue.png";
 import { Play } from "lucide-react";
 import Blogcards from "../Blog/components/blogcards";
 import NewsLetter from "../../components/NewsLetter";
+import { services_about } from "../../Data/servicesdata";
+import ServicesSection from "./../../components/ServicesSection";
 
 const statsData = [
   {
@@ -86,6 +87,12 @@ const About = () => {
     btn_text: "Get Started",
     text: "text-martex-dark_text",
   };
+
+  const services_data = {
+    title: "We make your business gain more revenue at a glance",
+    services: services_about,
+  };
+
   return (
     <section className="px-2">
       <Navbar data={data} />
@@ -106,7 +113,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="container py-4 sm:py-8 max-auto max-w-7xl">
+        <div className="container py-4 mx-auto sm:py-8 max-w-7xl">
           <div className="flex flex-wrap items-start justify-center gap-4 max-auto sm:gap-0">
             <div className="max-w-full px-2 xl:w-5/12 lg:max-xl:w-[40%] md:w-5/12">
               <div className="text-end">
@@ -252,18 +259,7 @@ const About = () => {
       </section>
 
       {/* Section 5 */}
-      <div className="px-0 py-10 mx-auto mt-10 max-w-7xl sm:px-0">
-        <div className="px-2 mx-auto text-center">
-          <h1 className="xl:text-6xl text-martex-dark_text font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
-            We make your business gain more <br className="hidden sm:block" />{" "}
-            revenue at a glance
-          </h1>
-          <span className="text-xl text-martex-light_text md:text-xl xl:text-2xl sm:text-lg">
-            Ligula risus auctor tempus magna feugiat lacinia.
-          </span>
-        </div>
-        <Services />
-      </div>
+      <ServicesSection services_data={services_data} />
 
       <Company title={"Trusted and used by over 3,400 companies"} />
 

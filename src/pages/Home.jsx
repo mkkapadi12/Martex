@@ -25,7 +25,7 @@ export default function Home() {
     logo: logowhite,
     logoscroll: logopink,
     // bg: "bg-[#8a4be0]",
-    link_color: "text-[#fff]",
+    link_color: "!text-[#fff]",
     btn_color: "bg-martex-light_pink",
     btn_text: "Sign up",
     text: "text-white",

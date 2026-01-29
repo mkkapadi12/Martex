@@ -1,57 +1,9 @@
-import {
-  LineChart,
-  Lightbulb,
-  BarChart3,
-  LayoutDashboard,
-  Trophy,
-  SearchCheck,
-} from "lucide-react";
-
-const services = [
-  {
-    title: "Market Research",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: LineChart,
-  },
-  {
-    title: "User Experience",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: Lightbulb,
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: BarChart3,
-  },
-  {
-    title: "Web Development",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: LayoutDashboard,
-  },
-  {
-    title: "Brand Design Identity",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: Trophy,
-  },
-  {
-    title: "SEO & SMM Services",
-    description:
-      "Porta semper lacus cursus feugiat primis ultrice ligula risus ociis auctor and tempus feugiat impedit felis cursus auctor augue mauris blandit ipsum",
-    icon: SearchCheck,
-  },
-];
-
-const Services = () => {
+const Services = ({ services }) => {
   return (
-    <section className="px-4 py-16 bg-white xl:px-0 sm:px-6 md:px-8">
-      <div className="max-w-[1300px] mx-auto">
+    <div className="px-4 py-16 bg-white xl:px-0 sm:px-6 md:px-3">
+      <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-x-16 xl:gap-y-14 md:gap-y-4 md:gap-x-4 gap-y-7">
-          {services.map((service, index) => {
+          {services?.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
@@ -67,7 +19,7 @@ const Services = () => {
 
                 {/* Content */}
                 <div className="text-center sm:text-start">
-                  <h3 className="text-lg md:text-xl xl:text-2xl font-semibold text-martex-dark_text mb-2">
+                  <h3 className="mb-2 text-xl font-semibold xl:text-2xl text-martex-dark_text">
                     {service.title}
                   </h3>
                   <p className="text-martex-light_text text-base/7 xl:text-lg/8">
@@ -79,7 +31,7 @@ const Services = () => {
           })}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

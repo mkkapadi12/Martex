@@ -19,6 +19,7 @@ import Reset from "./pages/Auth/Reset";
 import Teams from "./pages/Teams";
 import Contact from "./pages/Contact";
 import { NavigationMenuDemo } from "./pages/demo";
+import Careers from "./pages/Careers";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/careers" element={<Careers />} />
         <Route path="/demo" element={<NavigationMenuDemo />} />
 
         {/* Not Found */}
