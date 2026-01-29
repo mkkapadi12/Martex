@@ -2,10 +2,22 @@ import React from "react";
 import error from "../assets/images/error-404.png";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router-dom";
+import Navbar from "./../components/Navbar";
+import logoblue from "./../assets/images/logo-blue.png";
 
 const NotFound = () => {
+  const data = {
+    logo: logoblue,
+    logoscroll: logoblue,
+    bg: "bg-white",
+    link_color: "text-martex-dark_text",
+    btn_color: "bg-[#1680fb]",
+    btn_text: "Get Started",
+    text: "text-martex-dark_text",
+  };
   return (
     <section className="bg-[#f7f8f9] min-h-screen">
+      <Navbar data={data} />
       <div className="container">
         <div className="flex flex-wrap justify-center mx-auto">
           <div className="w-full max-w-full px-4 mx-auto md:w-9/12 lg:max-xl:w-8/12 xl:8/12">
@@ -13,10 +25,10 @@ const NotFound = () => {
               <div className="relative z-10 flex justify-center w-[80%] mx-auto mb-9 xl:mb-12 xl:w-full">
                 <img src={error} alt="not found" />
               </div>
-              <h1 className="font-semibold text-center text-3xl md:text-5xl xl:text-6xl text-martex-dark_text mb-4 md:mb-8 xl:mb-10">
+              <h1 className="mb-4 text-3xl font-semibold text-center md:text-5xl xl:text-6xl text-martex-dark_text md:mb-8 xl:mb-10">
                 Page Not Found
               </h1>
-              <p className="text-martex-light_text text-xl xl:text-2xl font-medium md:max-w-lg xl:max-w-xl md:text-xl mx-auto text-center mb-10">
+              <p className="mx-auto mb-10 text-xl font-medium text-center text-martex-light_text xl:text-2xl md:max-w-lg xl:max-w-xl md:text-xl">
                 Oops! The page you are looking for might have been moved,
                 renamed or might never existed
               </p>

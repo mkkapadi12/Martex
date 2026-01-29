@@ -18,6 +18,7 @@ import FAQs from "./pages/FAQs";
 import Reset from "./pages/Auth/Reset";
 import Teams from "./pages/Teams";
 import Contact from "./pages/Contact";
+import { NavigationMenuDemo } from "./pages/demo";
 
 const App = () => {
   return (
@@ -35,14 +36,15 @@ const App = () => {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/singleblog" element={<SingleBlog />} />
+        <Route path="/single-blog" element={<SingleBlog />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/download" element={<Download />} />
-        <Route path="/help" element={<HelpCenter />} />
+        <Route path="/help-center" element={<HelpCenter />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/demo" element={<NavigationMenuDemo />} />
 
         {/* Not Found */}
         <Route path="*" element={<NotFound />} />

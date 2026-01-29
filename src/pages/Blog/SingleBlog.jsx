@@ -595,7 +595,7 @@ const SingleBlog = () => {
           </div>
           {/* Articles & Resources Section */}
           <section className="px-2 py-10 sm:px-0">
-            <div className="container mx-auto max-w-7xl">
+            <div className="container mx-auto max-w-7xl xl:px-0 sm:px-9">
               <div className="px-2 mx-auto text-center">
                 <h1 className="xl:text-6xl text-martex-dark_text font-semibold mb-4 !leading-tight md:text-4xl text-3xl">
                   Keep Reading...

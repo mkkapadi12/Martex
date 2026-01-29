@@ -2,6 +2,58 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { X, ChevronDown } from "lucide-react";
 import { homeNav, othersNav } from "../Data/navigation";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "./ui/navigation-menu";
+
+const pagenavigation = [
+  {
+    section: "about",
+    items: [
+      { name: "About Us", path: "/about" },
+      { name: "Our Team", path: "/teams" },
+      { name: "Careers", path: "/careers" },
+      { name: "Career Details", path: "/career-details" },
+      { name: "Contact Us", path: "/contact" },
+    ],
+  },
+  {
+    section: "features",
+    items: [
+      { name: "Core Features", path: "/404" },
+      { name: "Our Projects", path: "/projects" },
+      { name: "Project Details", path: "/project-details" },
+      { name: "Testimonials", path: "/reviews" },
+      { name: "Download Page", path: "/download" },
+    ],
+  },
+  {
+    section: "pricing-help",
+    items: [
+      { name: "Pricing Page #1", path: "/pricing" },
+      { name: "Pricing Page #2", path: "/pricing" },
+      { name: "FAQs Page", path: "/faqs" },
+      { name: "Help Center", path: "/help-center" },
+      { name: "404 Page", path: "/404" },
+    ],
+  },
+  {
+    section: "blog-auth",
+    items: [
+      { name: "Blog Listing", path: "/blog" },
+      { name: "Single Blog Post", path: "/single-blog" },
+      { name: "Login Page", path: "/login" },
+      { name: "Signup Page", path: "/signup" },
+      { name: "Reset Password", path: "/reset-password" },
+    ],
+  },
+];
 
 export default function Navbar({ data }) {
   const [open, setOpen] = useState(false);
@@ -44,19 +96,121 @@ export default function Navbar({ data }) {
 
         {/* Desktop Menu */}
         <div
-          className={`hidden lg:flex gap-x-10 transition-all duration-300 lg:justify-end lg:w-[53%] ${
+          className={`hidden lg:flex !gap-x-10 transition-all duration-300 lg:justify-end lg:w-[53%] ${
             scrolled ? "text-martex-dark_text" : `${link_color}`
           }`}
         >
-          {navlinks.map((item, index) => (
-            <Link
-              key={index}
-              to={item.link}
-              className="text-base xl:text-[19px] font-medium"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <NavigationMenu>
+            <NavigationMenuList className="items-center gap-x-8">
+              {/* {[1, 2].map((item) => {
+                return (
+                  <NavigationMenuItem>
+                    <NavigationMenuLink asChild>
+                      <Link className="text-base xl:text-[19px] font-medium"></Link>
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                );
+              })} */}
+
+              <NavigationMenuItem className="!bg-transparent hover:!bg-transparent !text-base xl:!text-[19px] !font-medium">
+                <NavigationMenuTrigger
+                  className={`!bg-transparent hover:!bg-transparent p-0 text-base xl:!text-[19px] !font-medium ${
+                    scrolled ? "!text-martex-dark_text" : "!text-white"
+                  } `}
+                >
+                  About
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="!rounded-sm border">
+                  <ul className="w-48 px-3 py-2 space-y-1 text-base font-semibold bg-white !rounded-none text-start text-martex-dark_text">
+                    <Link to="/">
+                      <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink">
+                        Why Martex?
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink">
+                        Integration
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink">
+                        How it works
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink">
+                        Best Solutions
+                      </li>
+                    </Link>
+                    <Link to="/">
+                      <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink">
+                        Testimonials
+                      </li>
+                    </Link>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/features"
+                    className="text-base xl:text-[19px] font-medium"
+                  >
+                    Features
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem
+                className={`!bg-transparent hover:!bg-transparent  !text-base xl:!text-[19px] !font-medium`}
+              >
+                <NavigationMenuTrigger
+                  className={`!bg-transparent hover:!bg-transparent p-0 text-base xl:!text-[19px] !font-medium ${
+                    scrolled ? "!text-martex-dark_text" : "!text-white"
+                  } `}
+                >
+                  Pages
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-white text-martex-dark_text md:w-[700px] xl:w-[778px]">
+                  <div className="grid grid-cols-4 gap-8 px-6 py-4 text-base font-semibold">
+                    {pagenavigation.map((group, index) => (
+                      <ul key={index} className="flex flex-col">
+                        {group.items.map((item, idx) => (
+                          <Link key={idx} to={item.path}>
+                            <li className="p-2 transition-all duration-300 rounded-sm hover:bg-slate-100 hover:text-martex-light_pink text-martex-dark_text">
+                              {item.name}
+                            </li>
+                          </Link>
+                        ))}
+                      </ul>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/pricing"
+                    className="text-base xl:text-[19px] font-medium"
+                  >
+                    Pricing
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/faqs"
+                    className="text-base xl:text-[19px] font-medium"
+                  >
+                    FAQs
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
 
         {/* Desktop Buttons */}

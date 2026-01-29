@@ -107,8 +107,8 @@ const About = () => {
         </div>
 
         <div className="container py-4 sm:py-8 max-auto max-w-7xl">
-          <div className="flex flex-wrap gap-4 max-auto sm:gap-0">
-            <div className="max-w-full px-2 xl:w-5/12 lg:max-xl:w-5/12 md:5/12">
+          <div className="flex flex-wrap items-start justify-center gap-4 max-auto sm:gap-0">
+            <div className="max-w-full px-2 xl:w-5/12 lg:max-xl:w-[40%] md:w-5/12">
               <div className="text-end">
                 <div className="sm:block hidden ml-[13%] rounded-[12px] !mb-[30px] overflow-hidden lg:max-xl:ml-[3%]">
                   <img src={a21} alt="a2-1" className="rounded-[12px]" />
@@ -118,13 +118,13 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-full px-2 xl:w-7/12 lg:max-xl:w-7/12 md:max-lg:w-7/12">
-              <div className="overflow-hidden sm:mr-[-10%] !mb-[30px] md:max-lg:mr-[-8%] md:max-lg:mb-[20px]">
+            <div className="w-full max-w-full px-2 xl:w-7/12 lg:max-xl:w-[53%] md:max-lg:w-[50%]">
+              <div className="overflow-hidden sm:mr-[-8%] !mb-[30px] md:max-lg:mr-[-8%] md:max-lg:mb-[20px]">
                 <img src={a23} alt="a2-3" className="rounded-[12px]" />
               </div>
               <div className="flex flex-wrap">
                 <div className="w-full max-w-full sm:px-2 md:w-7/12 lg:max-xl:w-6/12 xl:w-6/12">
-                  <div className="bg-[#2e3648] flex flex-col justify-center h-full py-10 sm:px-6 px-4 md:px-8 text-base sm:text-lg rounded-[12px] text-white gap-4 ">
+                  <div className="bg-[#2e3648] flex flex-col justify-center h-full py-10 sm:px-6 px-4 md:px-8 text-base sm:text-base xl:text-lg rounded-[12px] text-white gap-4 ">
                     <p className="font-medium">
                       Nullam tempor pretium a gravida donec congue ipsum porta
                       justo integer dolor odio auctor a neque suscipit an ipsum

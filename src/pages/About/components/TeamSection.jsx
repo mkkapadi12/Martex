@@ -54,8 +54,8 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className="py-20 bg-white xl:px-0 md:px-12">
-      <div className="mx-auto max-w-[1300px]">
+    <section className="py-20 bg-white">
+      <div className="mx-auto max-w-[1300px]  sm:px-4 xl:px-0">
         <div className="mb-10">
           <h1 className="text-3xl font-semibold text-center sm:leading-relaxed md:text-5xl xl:text-6xl text-martex-dark_text">
             All we do is dream and craft <br className="hidden sm:block" />{" "}
@@ -67,7 +67,7 @@ export default function TeamSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-8 py-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-8 py-10 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <div
               key={member.id}
@@ -84,7 +84,7 @@ export default function TeamSection() {
 
               {/* Info */}
               <div className="p-4">
-                <h3 className="text-xl font-semibold xl:text-2xl text-martex-dark_text">
+                <h3 className="text-base font-semibold lg:text-lg xl:text-2xl text-martex-dark_text">
                   {member.name}
                 </h3>
                 <p className="mt-1 text-base xl:text-xl text-martex-light_text">

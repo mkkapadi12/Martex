@@ -105,7 +105,7 @@ const Teams = () => {
           </div>
         </div>
         {/* jobs data */}
-        <div className="xl:max-w-[1300px] container mx-auto sm:px-10 xl:px-2 xl:py-16">
+        <div className="xl:max-w-[1300px] container mx-auto sm:px-6 xl:px-2 xl:py-16">
           <div className="">
             {/* text */}
             <div className="space-y-5 text-center">
@@ -125,7 +125,7 @@ const Teams = () => {
                   return (
                     <div
                       key={data.id}
-                      className="sm:text-start text-center bg-[#f7f8f9] p-[25px_30px] sm:p-[25px_35px] rounded-[10px] space-y-2 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
+                      className="sm:text-start text-center bg-[#f7f8f9] p-[25px_30px] sm:p-[25px_25px] lg:p-[25px_35px] rounded-[10px] space-y-2 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
                     >
                       <span className="text-[15px] font-semibold uppercase text-martex-light_text">
                         {data.department}
@@ -133,7 +133,7 @@ const Teams = () => {
                       <h2 className="text-xl font-semibold text-martex-dark_text xl:text-2xl">
                         {data.title}
                       </h2>
-                      <h3 className="sm:text-base xl:text-lg text-martex-light_text">
+                      <h3 className="text-base sm:text-[14px] xl:text-lg text-martex-light_text">
                         {data.location + " / " + data.type}
                       </h3>
                     </div>
