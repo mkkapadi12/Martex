@@ -19,6 +19,7 @@ import Company from "../components/Company";
 import logopink from "../assets/images/logo-pink.png";
 import logowhite from "../assets/images/logo-white.png";
 import bg from "../assets/images/bg-03.jpg";
+import f13 from "../assets/images/img-13.png";
 
 export default function Home() {
   const data = {
@@ -42,14 +43,16 @@ export default function Home() {
       <Hero />
       <Features />
       <Engagement />
-      <SocialMarketing />
+      <SocialMarketing
+        title={"Reach your audience through social media marketing"}
+      />
       <Stats />
       <SmarterWayToWork />
       <SmartSolutionsSection />
       <TrackProgress />
       <Company title={"Martex is loved and trusted by thousands:"} />
-      <SolutionsSection />
-      <Productivity />
+      <SolutionsSection title={"The Complete Solutions"} />
+      <Productivity img={f13} />
       <Discover />
       <Testimonials />
       <Automate />

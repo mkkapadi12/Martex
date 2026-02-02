@@ -20,17 +20,19 @@ import Teams from "./pages/Teams";
 import Contact from "./pages/Contact";
 import { NavigationMenuDemo } from "./pages/demo";
 import Careers from "./pages/Careers";
+import CareersRole from "./pages/CareersRole";
+import Features from "./pages/Features";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Auth routes */}
+        {/* Auth routes(3 pages) */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<Reset />} />
 
-        {/* Pages */}
+        {/* Pages (17 pages)*/}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/terms" element={<TermsOfService />} />
@@ -45,10 +47,11 @@ const App = () => {
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/teams" element={<Teams />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/features" element={<Features />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/demo" element={<NavigationMenuDemo />} />
 
-        {/* Not Found */}
+        {/* Not Found (1 page)*/}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

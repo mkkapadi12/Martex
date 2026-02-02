@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { X, ChevronDown } from "lucide-react";
-import { homeNav, othersNav } from "../Data/navigation";
+import { homeNav, mobilelinks, othersNav } from "../Data/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -10,6 +10,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import { Accordion, AccordionContent, AccordionItem } from "./ui/accordion";
+import { AccordionTrigger } from "@radix-ui/react-accordion";
 
 const pagenavigation = [
   {
@@ -18,14 +20,14 @@ const pagenavigation = [
       { name: "About Us", path: "/about" },
       { name: "Our Team", path: "/teams" },
       { name: "Careers", path: "/careers" },
-      { name: "Career Details", path: "/career-details" },
+      { name: "Career Details", path: "/career-role" },
       { name: "Contact Us", path: "/contact" },
     ],
   },
   {
     section: "features",
     items: [
-      { name: "Core Features", path: "/404" },
+      { name: "Core Features", path: "/features" },
       { name: "Our Projects", path: "/projects" },
       { name: "Project Details", path: "/project-details" },
       { name: "Testimonials", path: "/reviews" },
@@ -259,7 +261,7 @@ export default function Navbar({ data }) {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 z-50 h-full w-[85%] max-w-sm bg-white transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 z-50 h-screen overflow-x-scroll w-[85%] max-w-sm bg-white transform transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -271,35 +273,73 @@ export default function Navbar({ data }) {
         </div>
 
         {/* Menu Items */}
-        <div className="flex flex-col font-medium divide-y text-martex-dark_text">
-          <div className="flex items-center justify-between p-5">
-            <span>About</span>
-            <ChevronDown size={18} />
-          </div>
+        <div className="flex flex-col font-medium divide-y !text-[#666] bg-white">
+          <Accordion type="single" collapsible className="w-full">
+            <div className="">
+              <AccordionItem value="about" className="p-4 border-none">
+                <AccordionTrigger className="flex justify-between w-full gap-4 text-lg font-semibold">
+                  About
+                  <ChevronDown />
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="mt-4 space-y-3 text-base text-[#666] ">
+                    <li>Why Martex ?</li>
+                    <li>Integrations</li>
+                    <li>How It Works</li>
+                    <li>Best Solutions</li>
+                    <li>Testimonials</li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <hr />
+              <AccordionItem value="features" className="p-4 border-none">
+                <AccordionTrigger className="flex justify-between w-full gap-4 text-lg font-semibold">
+                  <Link to="/features">Features</Link>
+                </AccordionTrigger>
+              </AccordionItem>
+              <hr />
+              <AccordionItem value="pages" className="p-4 border-none">
+                <AccordionTrigger className="flex justify-between w-full gap-4 text-lg font-semibold">
+                  Pages
+                  <ChevronDown />
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="mt-4 space-y-3 text-base text-[#666] ">
+                    {mobilelinks?.map((link, index) => {
+                      return (
+                        <li key={index}>
+                          <Link to={link.path}>{link.name}</Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+              <hr />
+              <AccordionItem value="features" className="p-4 border-none">
+                <AccordionTrigger className="flex justify-between w-full gap-4 text-lg font-semibold">
+                  <Link to="/pricing">Pricing</Link>
+                </AccordionTrigger>
+              </AccordionItem>
+              <hr />
+              <AccordionItem value="features" className="p-4 border-none">
+                <AccordionTrigger className="flex justify-between w-full gap-4 text-lg font-semibold">
+                  <Link to="/faqs">FAQs</Link>
+                </AccordionTrigger>
+              </AccordionItem>
+            </div>
+          </Accordion>
 
-          <div className="p-5 text-gray-400 bg-gray-100">Features</div>
-
-          <div className="flex items-center justify-between p-5">
-            <span>Pages</span>
-            <ChevronDown size={18} />
-          </div>
-
-          <Link to="#" className="p-5">
-            Pricing
-          </Link>
-
-          <Link to="#" className="p-5">
-            FAQs
-          </Link>
-
-          <Link to="#" className="p-5">
+          <Link to="/login" className="p-5 text-lg font-semibold">
             Sign in
           </Link>
 
           {/* Sign up button */}
-          <button className="p-5 font-semibold text-left text-white bg-pink-500">
-            Sign up
-          </button>
+          <Link to="/signup" className="w-full">
+            <button className="w-full p-5 text-lg font-semibold text-left text-white bg-martex-light_pink">
+              Sign up
+            </button>
+          </Link>
         </div>
       </div>
     </header>

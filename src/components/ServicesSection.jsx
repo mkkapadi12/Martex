@@ -5,7 +5,7 @@ const ServicesSection = ({ services_data }) => {
   const { title, services } = services_data;
   return (
     <section className="py-10 xl:py-12">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-[1350px]">
         <div className="container px-3 mx-auto sm:px-6">
           {/* title */}
           <div className="px-3 mx-auto text-center sm:max-w-3xl xl:max-w-5xl">

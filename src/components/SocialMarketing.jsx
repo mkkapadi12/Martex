@@ -2,14 +2,14 @@ import React from "react";
 import f1 from "../assets/images/f_06.png";
 import f2 from "../assets/images/f_04.png";
 
-export default function SocialMarketing() {
+export default function SocialMarketing({ title }) {
   return (
     <section className="py-10 xl:py-12">
       <div className="container px-3 mx-auto sm:px-6">
         {/* text */}
         <div className="px-4 mx-auto mb-12 space-y-4 text-center sm:max-w-3xl xl:max-w-4xl sm:px-0">
           <h2 className="text-3xl font-semibold sm:text-5xl xl:text-[55px] !leading-snug xl:!leading-tight text-martex-dark_text">
-            Reach your audience through social media marketing
+            {title}
           </h2>
           <p className="text-lg sm:text-xl text-martex-light_text xl:text-2xl">
             Ligula risus auctor tempus magna feugiat lacinia.

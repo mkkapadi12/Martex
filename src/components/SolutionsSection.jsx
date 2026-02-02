@@ -33,15 +33,15 @@ const SolutionCard = ({ image, title, description }) => {
   );
 };
 
-export default function SolutionsSection() {
+export default function SolutionsSection({ title }) {
   return (
-    <section className="py-10 sm:py-20">
+    <section className="py-10 xl:py-12">
       <div className="container px-3 mx-auto sm:px-6">
         <div className="max-w-[1300px] mx-auto space-y-10 sm:space-y-20">
           {/* text */}
           <div className="max-w-4xl mx-auto space-y-5 text-center sm:px-6 xl:space-y-7">
             <h2 className="text-3xl font-bold sm:text-5xl xl:text-6xl text-martex-dark_text">
-              The Complete Solutions
+              {title}
             </h2>
             <p className="text-xl xl:text-2xl text-martex-light_text">
               Ligula risus auctor tempus magna feugiat lacinia.

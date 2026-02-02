@@ -26,7 +26,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="px-4 py-8 sm:py-10 md:py-12 xl:py-16">
+    <footer className="px-4 py-8 sm:py-10 md:py-10 xl:py-16">
       <div className="max-w-5xl mx-auto text-center">
         {/* Logo */}
         <div className="flex items-center justify-center gap-2">
@@ -38,10 +38,10 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="my-10 border-t border-gray-200" />
+        <div className="border-t border-gray-200 my-7 xl:my-10" />
 
         {/* Links */}
-        <div className="flex flex-wrap justify-center text-base xl:text-lg font-medium text-martex-light_text gap-x-8 gap-y-4">
+        <div className="flex flex-wrap justify-center text-base font-medium xl:text-lg text-martex-light_text gap-x-8 gap-y-4">
           {links.map((link, index) => {
             return (
               <Link
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 mt-10 text-gray-400">
+        <div className="flex justify-center gap-6 mt-5 text-gray-400 xl:mt-10">
           {
             /* Social Media Icons */
             [

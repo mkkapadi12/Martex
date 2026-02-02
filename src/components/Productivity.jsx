@@ -1,8 +1,7 @@
 import React from "react";
-import f13 from "../assets/images/img-13.png";
 import { CheckIcon } from "lucide-react";
 
-const Productivity = () => {
+const Productivity = ({ img }) => {
   const bulletPoints = [
     "Magna dolor luctus at egestas sapien",
     "Cursus purus suscipit vitae cubilia magnis volute egestas vitae sapien turpis ultrice auctor congue varius magnis",
@@ -31,7 +30,7 @@ const Productivity = () => {
               <ul className="space-y-3">
                 {bulletPoints.map((point, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2 text-martex-light_pink">
+                    <span className="mr-2 text-martex-light_blue">
                       <CheckIcon size={18} />
                     </span>
                     <span className="text-base xl:text-lg text-martex-light_text">
@@ -43,7 +42,7 @@ const Productivity = () => {
             </div>
             {/* image */}
             <div className="order-1 sm:order-2 xl:px-4">
-              <img src={f13} alt="productivity" />
+              <img src={img} alt="productivity" />
             </div>
           </div>
         </div>
